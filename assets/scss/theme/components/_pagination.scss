@@ -1,0 +1,15 @@
+.pagination {
+ 
+    .btn {
+        @apply text-blue-dark bg-white border-grey-200 rounded-none p-0;
+        @apply min-w-[44px] min-h-[44px];
+
+        &:hover, &:focus {
+            @apply z-20;
+        }
+        @apply text-xs leading-[14px] font-normal;
+        &-active {
+            @apply bg-green text-white font-bold;
+        }
+    }
+}

@@ -11,7 +11,7 @@ mix.webpackConfig({
         "jquery": "jQuery",
     },
     output: {
-        publicPath: '/wp-content/themes/exchangeTheme/lp/build/',
+        publicPath: '/build/',
     },
 });
 
@@ -22,6 +22,7 @@ module.exports = {
         }
     }
 }
+
 mix.tailwind();
 mix.js('assets/js/app.js', 'js').vue();
 mix.sass('assets/scss/app.scss', 'css').options({

@@ -5,10 +5,13 @@ import 'lazysizes'
 // import a plugin
 import 'lazysizes/plugins/parent-fit/ls.parent-fit'
 // Alpine - https://alpinejs.dev/essentials/installation
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
 
 // Theme Functions
-const fSmoothScroll = require('./utils/smooth-scroll')
-//const fCarousels = require('./components/carousels')
+//const fSmoothScroll = require('./utils/smooth-scroll')
+const fCarousels = require('./components/carousels')
+//const fScroll = require('./utils/scroll')
 //const fGSAPController = require('./components/gsap-controller')
 //const fAccordion = require('./components/accordion')
 
@@ -37,14 +40,15 @@ const InitVueComponents = () => {
 // Initialise our components on jQuery.ready…
 jQuery(function ($) {
     // Static Functions
-    fSmoothScroll()
-    InitVueComponents()
-    fAccordion()
+    //fSmoothScroll()
+    //InitVueComponents()
+    //fAccordion()
     
     // plugins
-    Alpine.start()
+    //Alpine.start()
 
     // Async Functions
     fCarousels.init()
-    fGSAPController.init()
+    ffScroll.init()
+    //fGSAPController.init()
 })

@@ -1,0 +1,96 @@
+.text-single--filters {
+    li {
+        &:not(:last-child) {
+            @apply relative flex;
+            &::after {
+                content: "·";
+                @apply text-[17px];
+                @apply relative block;
+                @apply px-[23px];
+            }
+        }
+    }
+}
+.disabled {
+    @apply cursor-default pointer-events-none;
+}
+.text-breadcrumbs {
+    li {
+        &:not(:last-child) {
+            @apply relative flex;
+            &::after {
+                content: "|";
+                @apply relative block;
+                @apply px-[30px];
+                @apply text-black;
+            }
+        }
+    }
+}
+.posts-filters .categories {
+    a {
+        @apply transition-[color] hover:text-green;
+    }
+}
+.search {
+    @apply min-w-[270px];
+    input {
+        background: rgba(48, 43, 63, 0.1);
+        @apply py-[5px] pl-2.5 pr-[50px] w-full rounded-sm;
+        @apply text-sm leading-[24px] font-normal text-blue-dark;
+        &::placeholder {
+            @apply text-sm leading-[24px] font-light text-[#666];
+
+        }
+    }
+    button {
+        background: rgba(48, 43, 63, 0);
+        @apply cursor-pointer absolute right-0 top-1/2 transform -translate-y-1/2 z-20;
+        @apply h-[34px] pr-2.5;
+   }
+   &__baza-wiedzy {
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+
+    input {
+        @apply bg-white;
+        @apply py-[5px] pl-[5px] pr-[50px] w-full rounded-sm;
+        &::placeholder {
+            @apply text-sm leading-[24px] font-light text-[#666];
+           
+        }
+    }
+ 
+}
+}
+
+.select {
+    @apply min-h-full; 
+    @apply p-0;
+    @apply p-1 pr-[50px] w-full rounded-sm;
+    @apply h-auto;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    @apply text-base  font-normal text-blue-dark;
+    background: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M7 10L12 15L17 10H7Z' fill='#302B3F'/></svg>") no-repeat;
+    background-position: right 5px top 50%;
+    option {
+        @apply text-base font-normal text-blue-dark;
+        &:disabled{
+            @apply text-base font-light text-blue-dark;
+        }
+    }
+    &:focus {
+        @apply outline-none;
+    }
+}
+
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

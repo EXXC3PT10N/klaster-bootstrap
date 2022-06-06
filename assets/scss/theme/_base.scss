@@ -1,13 +1,29 @@
 // Add any custom base CSS can go here
 
-
 // Foundation
 // =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
 html {
-  @apply antialiased;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
+    @apply antialiased;
+    text-rendering: optimizeLegibility;
+    @apply font-fira-sans;
+    @apply text-blue-dark;
 }
-body {
-  @apply font-prophet;
+.grid-custom {
+    &__gapped {
+        @apply gap-[30px];
+    }
+    @apply grid grid-cols-12;
+}
+
+.underline-custom {
+    @apply relative;
+    &::after {
+        content: "";
+        @apply bg-grey w-full h-px relative block mt-[5px];
+    }
+    &::before {
+
+        content: "";
+        @apply bg-green w-[21px] h-0.5 absolute -bottom-[0.5px] rounded-[1px] z-10;
+    }
 }

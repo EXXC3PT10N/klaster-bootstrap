@@ -1,0 +1,11 @@
+.btn {
+  @apply text-base uppercase text-white font-bold rounded-[5px];
+}
+
+.btn-primary {
+  @apply bg-green hover:ring-2 hover:ring-green transition-shadow focus:ring-2 focus:ring-green;
+}
+
+.btn-navbar {
+  @apply py-3 px-[30px];
+}
