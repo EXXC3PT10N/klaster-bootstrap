@@ -413,6 +413,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1200px;
   }
 }
+.pointer-events-none{
+  pointer-events: none;
+}
 .visible{
   visibility: visible;
 }
@@ -449,6 +452,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bottom-0{
   bottom: 0px;
 }
+.top-4{
+  top: 1rem;
+}
 .z-50{
   z-index: 50;
 }
@@ -463,6 +469,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .col-span-full{
   grid-column: 1 / -1;
+}
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
+.col-span-7{
+  grid-column: span 7 / span 7;
+}
+.row-start-1{
+  grid-row-start: 1;
+}
+.my-2\.5{
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .mr-7{
   margin-right: 1.75rem;
@@ -502,6 +525,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-1{
   margin-bottom: 0.25rem;
+}
+.mb-\[15px\]{
+  margin-bottom: 15px;
+}
+.mb-\[70px\]{
+  margin-bottom: 70px;
 }
 .block{
   display: block;
@@ -544,6 +573,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-4{
   height: 1rem;
+}
+.h-fit{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .w-full{
   width: 100%;
@@ -651,6 +685,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between{
   justify-content: space-between;
 }
+.gap-\[30px\]{
+  gap: 30px;
+}
 .gap-x-\[30px\]{
   -moz-column-gap: 30px;
        column-gap: 30px;
@@ -711,6 +748,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white\/50{
   background-color: rgb(255 255 255 / 0.5);
 }
+.bg-grey-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+}
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -736,6 +777,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-1{
   padding: 0.25rem;
+}
+.p-0{
+  padding: 0px;
 }
 .px-5{
   padding-left: 1.25rem;
@@ -807,6 +851,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-4{
   padding-top: 1rem;
+}
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+.pb-20{
+  padding-bottom: 5rem;
+}
+.pt-\[74px\]{
+  padding-top: 74px;
+}
+.pt-\[50px\]{
+  padding-top: 50px;
+}
+.pt-\[12px\]{
+  padding-top: 12px;
+}
+.pr-\[15px\]{
+  padding-right: 15px;
+}
+.pl-2\.5{
+  padding-left: 0.625rem;
+}
+.pr-3{
+  padding-right: 0.75rem;
 }
 .text-center{
   text-align: center;
@@ -1055,6 +1123,7 @@ html{
 }
 
 .btn-primary:hover{
+  position: relative;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
@@ -1063,6 +1132,8 @@ html{
 }
 
 .btn-primary:focus{
+  position: relative;
+  z-index: 50;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
@@ -1088,13 +1159,11 @@ html{
   color: rgb(48 43 63 / var(--tw-text-opacity));
   min-height: 44px;
   min-width: 44px;
+  border: 1px solid #DFDFDF;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 400;
   line-height: 14px;
-}
-.pagination .btn:hover, .pagination .btn:focus{
-  z-index: 20;
 }
 .pagination .btn-active{
   --tw-bg-opacity: 1;
@@ -1102,6 +1171,15 @@ html{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.pagination .btn:not(:last-of-type) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.pagination .btn:not(:first-of-type) {
+  margin-left: -1px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .text-single--filters li:not(:last-child){
@@ -1363,6 +1441,9 @@ input[type=search]::-webkit-search-results-decoration {
   .md\:col-span-3{
     grid-column: span 3 / span 3;
   }
+  .md\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
   .md\:col-start-10{
     grid-column-start: 10;
   }
@@ -1373,6 +1454,9 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .lg\:col-span-4{
     grid-column: span 4 / span 4;
+  }
+  .lg\:col-span-6{
+    grid-column: span 6 / span 6;
   }
   .lg\:flex{
     display: flex;

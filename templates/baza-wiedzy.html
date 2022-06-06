@@ -16,25 +16,319 @@
 </head>
 
 <body class="home ">
-    <header class="flex flex-wrap items-center pt-[30px] pr-[20px] pb-[20px] pl-[30px] bg-blue-dark text-white">
+    <header class="flex flex-wrap items-center px-5 py-[30px] bg-blue-dark text-white">
         <div class="mr-7 shrink-0 flex items-center space-x-[10px]"><a class="flex items-center space-x-[10px]">
-            <a href="/"><img src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
-            <a href=""><img src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
+                <a href="/"><img src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
+                <a href=""><img src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
         </div>
-        <ul class="flex mr-10 grow font-fira-sans">
+        <ul class="flex mr-10 grow">
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/wiadomosci.html">Wiadomości</a></li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/o-klastrze.html">O klastrze</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/oferta-klastra.html">Oferta Klastra</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/gielda-uslug.html">Giełda Usług</a></li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/oferta-klastra.html">Oferta
+                    Klastra</a></li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/gielda-uslug.html">Giełda Usług</a>
+            </li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/showroom.html">Showroom</a></li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/projekty.html">Projekty</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/akademia-recyklingu.html">Akademia Recyklingu</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/baza-wiedzy.html">Baza wiedzy</a></li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/akademia-recyklingu.html">Akademia
+                    Recyklingu</a></li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/baza-wiedzy.html">Baza wiedzy</a>
+            </li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/kontakt.html">Kontakt</a></li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/english.html">English</a></li>
         </ul><a class="btn btn-primary btn-navbar" href="/">strefa klastra</a>
     </header>
-   
+    <!-- hero -->
+    <div class="relative h-[300px] flex items-end pb-[30px]">
+        <div class="text-h1 z-50 relative container">
+            <h1>Baza wiedzy</h1>
+        </div>
+        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+            src="/assets/images/hero/bazawiedzy-header.jpg" alt="">
+    </div>
+    <!-- end hero -->
+    <section class="header mb-[20px]">
+        <div class="container">
+            <div class="flex justify-between pt-5">
+                <div class="text-breadcrumbs p-2.5 mb-2.5">
+                    <ul class="flex flex-wrap w-full">
+                        <li><a href="/">Klaster</a></li>
+                        <li><a class="disabledd active" href="">Baza wiedzy</a></li>
+                    </ul>
+                </div>
+                <form>
+                    <div class="search relative"><input type="search" id="default-search" class="outline-none "
+                            placeholder="Znajdz artykuł" required=""><button type="submit"><svg
+                                class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="#302B3F"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg></button></div>
+                </form>
+            </div>
+            <div>
+                <div class="grid-custom grid-custom__gapped pt-2.5">
+                    <div class="col-span-full lg:col-span-6 row-start-1">
+                        <div class="flex items-center">
+                            <div class="w-full">
+                                <div class="text-h2">
+                                    <h2 class="underline-custom inline-block">Najnowsze artykuły</h2>
+                                </div>
+                            </div>
+                            <div class="arrows flex space-x-5"><a class="previous group cursor-pointer"><svg class=""
+                                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle class="group-hover:stroke-green transition group-hover:opacity-100"
+                                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                                        </circle>
+                                        <path class="transition group-hover:fill-green group-hover:opacity-100"
+                                            opacity=".3"
+                                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                                            fill="#282828"></path>
+                                    </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
+                                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle class="transition group-hover:stroke-green group-hover:opacity-100"
+                                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                                        </circle>
+                                        <path class="transition group-hover:fill-green group-hover:opacity-100"
+                                            opacity=".3"
+                                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                                            fill="#282828"></path>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-custom grid-custom__gapped pt-2.5">
+                    <div class="col-span-full lg:col-span-6">
+                        <div class="grid grid-cols-8 gap-x-[30px] mt-[50px]">
+                            <div class="col-span-full lg:col-span-4">
+                                <img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt="">
+                            </div>
+                            <div class="col-span-full lg:col-span-4 flex flex-col">
+                                <ul class="filters text-single--filters flex flex-wrap">
+                                    <li><a href="">Kategoria</a></li>
+                                </ul>
+                                <div class="text-h3 mt-4 mb-[30px]">
+                                    <h3>Lorem ipsum dolor sit consectetur</h3>
+                                </div><a href=""
+                                    class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">Dowiedz
+                                    się więcej <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                            </path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="a">
+                                                <path fill="#fff" transform="translate(0 .699)"
+                                                    d="M0 0h28.554v28.554H0z"></path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-full lg:col-span-6">
+                        <div class="grid grid-cols-8 gap-x-[30px] mt-[50px]">
+                            <div class="col-span-full lg:col-span-4">
+                                <img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt="">
+                            </div>
+                            <div class="col-span-full lg:col-span-4 flex flex-col">
+                                <ul class="filters text-single--filters flex flex-wrap">
+                                    <li><a href="">Kategoria</a></li>
+                                </ul>
+                                <div class="text-h3 mt-4 mb-[30px]">
+                                    <h3>Lorem ipsum dolor sit consectetur</h3>
+                                </div><a href=""
+                                    class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">Dowiedz
+                                    się więcej <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                            </path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="a">
+                                                <path fill="#fff" transform="translate(0 .699)"
+                                                    d="M0 0h28.554v28.554H0z"></path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- posts -->
+    <section class="posts bg-grey-light pt-[50px] pb-[36px]">
+        <div class="container">
+            <div class="grid-custom grid-custom__gapped">
+                <div
+                    class="sidebar bg-white rounded col-span-full lg:col-span-4 flex flex-col h-fit pt-[12px] pr-[15px] pl-2.5">
+                    <div class="dropdown"><label tabindex="0" class="sidebar--heading">Sortuj wg:</label><select
+                            class="select w-full">
+                            <option value="Najnowsze">Najnowsze
+                                <!-- -->
+                            </option>
+                            <option value="Najstarsze">Najstarsze
+                                <!-- -->
+                            </option>
+                        </select></div>
+                    <div><label class="sidebar--heading">Szukaj</label>
+                        <form>
+                            <div class="search search__baza-wiedzy relative"><input type="search" id="default-search"
+                                    class="outline-none " placeholder="Znajdz artykuł" required=""><button
+                                    type="submit"><svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                                        stroke="#302B3F" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg></button></div>
+                        </form>
+                    </div>
+                    <div><label for="" class="sidebar--heading">Kategorie</label>
+                        <ul>
+                            <li>
+                                <div class="collapse"><input type="checkbox" class="peer">
+                                    <div
+                                        class="collapse-title p-0 text-primary-content peer-checked:text-secondary-content">
+                                        <p>Kategoria 1</p>
+                                        <div class="flex absolute p-0 top-4 right-0 items-center pointer-events-none">
+                                            <span
+                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
+                                                    style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
+                                                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                                                        alt="" aria-hidden="true"
+                                                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"></span><img
+                                                    src="/_next/static/media/arrow-drop-down.b202502a.svg"
+                                                    decoding="async" data-nimg="intrinsic" class=""
+                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                                                    srcset="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"><noscript><img
+                                                        srcSet="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"
+                                                        src="/_next/static/media/arrow-drop-down.b202502a.svg"
+                                                        decoding="async" data-nimg="intrinsic"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                                                        class="" loading="lazy" /></noscript></span></div>
+                                    </div>
+                                    <div
+                                        class="collapse-content text-primary-content peer-checked:text-secondary-content">
+                                        <ul>
+                                            <li>
+                                                <p>Podkategoria 1</p>
+                                            </li>
+                                            <li>
+                                                <p>Podkategoria 2</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapse"><input type="checkbox" class="peer">
+                                    <div
+                                        class="collapse-title text-primary-content peer-checked:text-secondary-content">
+                                        <p class="">Kategoria 2</p>
+                                        <div class="flex absolute top-4 right-0 items-center pr-3 pointer-events-none">
+                                            <span
+                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
+                                                    style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
+                                                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                                                        alt="" aria-hidden="true"
+                                                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"></span><img
+                                                    src="/_next/static/media/arrow-drop-down.b202502a.svg"
+                                                    decoding="async" data-nimg="intrinsic" class=""
+                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                                                    srcset="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"><noscript><img
+                                                        srcSet="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"
+                                                        src="/_next/static/media/arrow-drop-down.b202502a.svg"
+                                                        decoding="async" data-nimg="intrinsic"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                                                        class="" loading="lazy" /></noscript></span></div>
+                                    </div>
+                                    <div
+                                        class="collapse-content text-primary-content peer-checked:text-secondary-content">
+                                        <ul>
+                                            <li>
+                                                <p class="">Podkategoria 1</p>
+                                            </li>
+                                            <li>
+                                                <div class="collapse"><input type="checkbox" class="peer">
+                                                    <div
+                                                        class="collapse-title text-primary-content peer-checked:text-secondary-content">
+                                                        <p class="">Podkategoria 2</p>
+                                                        <div
+                                                            class="flex absolute top-4 right-0 items-center pr-3 pointer-events-none">
+                                                            <span
+                                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
+                                                                    style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
+                                                                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                                                                        alt="" aria-hidden="true"
+                                                                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"></span><img
+                                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                                    decoding="async" data-nimg="intrinsic" class=""
+                                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"><noscript><img
+                                                                        srcSet="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"
+                                                                        src="/_next/static/media/arrow-drop-down.b202502a.svg"
+                                                                        decoding="async" data-nimg="intrinsic"
+                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                                                                        class="" loading="lazy" /></noscript></span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse-content text-primary-content peer-checked:text-secondary-content">
+                                                        <ul>
+                                                            <li>
+                                                                <p class="">PodPodkategoria 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="">PodPodkategoria 2</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" posts-main grid grid-cols-8 gap-[30px] mb-[55px] col-span-full lg:col-span-8">
+                    <div class="col-span-full lg:col-span-4">
+                        <div class="flex flex-col "><a href="">
+                            <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
+                        </a>
+                            <ul class="filters text-single--filters flex flex-wrap pt-5">
+                                <li><a href="">Kategoria</a></li>
+                            </ul>
+                            <div class="text-h3 pt-4"><a href="">
+                                    <h3>Lorem ipsum dolor sit consectetur</h3>
+                                </a></div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="pagination flex justify-center">
+                <div class="btn-group"><button class="btn btn-primary">&lt;</button><button
+                        class="btn btn-primary">1</button><button
+                        class="btn btn-primary btn-active disabled">2</button><button
+                        class="btn btn-primary">3</button><button class="btn btn-primary">4</button><button
+                        class="btn btn-primary">5</button><button class="btn btn-primary">&gt;</button></div>
+            </div>
+        </div>
+    </section>
+    <!-- end posts -->
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type='text/javascript' src='/build/js/app.js' id='app-js'></script>
 </body>
 <footer class="bg-blue-dark text-white pt-[72px] pb-[120px]">
     <div class="container">
@@ -56,7 +350,8 @@
                     <p>Kontakt</p>
                 </div>
                 <div class="text-base">
-                    <div class="element flex space-x-1"><img src="/assets/images/icons/Phone.svg" alt=""><a href="">ul. Wybrana 3/5,
+                    <div class="element flex space-x-1"><img src="/assets/images/icons/Phone.svg" alt=""><a href="">ul.
+                            Wybrana 3/5,
                             00-000 Miasto</a></div>
                     <div class="element flex space-x-1"><img src="/assets/images/icons/Email.svg" alt=""><a
                             href="tel:+48 123 456 789">+48 123 456 789</a></div>
@@ -71,9 +366,12 @@
                     </p>
                 </div>
                 <div class="flex space-x-5">
-                    <div class="block"><a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/facebook.svg" alt=""></a></div>
-                    <div class="block"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/linkedin.svg" alt=""></a></div>
-                    <div class="block"><a href="https://twitter.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/twitter.svg" alt=""></a></div>
+                    <div class="block"><a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img
+                                src="/assets/images/icons/facebook.svg" alt=""></a></div>
+                    <div class="block"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><img
+                                src="/assets/images/icons/linkedin.svg" alt=""></a></div>
+                    <div class="block"><a href="https://twitter.com/" target="_blank" rel="noreferrer"><img
+                                src="/assets/images/icons/twitter.svg" alt=""></a></div>
                 </div>
             </div>
         </div>

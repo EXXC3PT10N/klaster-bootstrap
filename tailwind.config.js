@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    require('flowbite/plugin')
-],
+
 
     future: {
       removeDeprecatedGapUtilities: true,

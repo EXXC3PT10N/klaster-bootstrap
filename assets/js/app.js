@@ -2,6 +2,8 @@ window.$ = window.jQuery = require('jquery');
 
 // LazyLoad - https://github.com/aFarkas/lazysizes
 import 'lazysizes'
+import 'flowbite';
+
 // import a plugin
 import 'lazysizes/plugins/parent-fit/ls.parent-fit'
 // Alpine - https://alpinejs.dev/essentials/installation
@@ -48,7 +50,7 @@ jQuery(function ($) {
     //Alpine.start()
 
     // Async Functions
-    fCarousels.init()
-    ffScroll.init()
+    //fCarousels.init()
+    //ffScroll.init()
     //fGSAPController.init()
 })

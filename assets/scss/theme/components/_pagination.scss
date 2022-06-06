@@ -3,13 +3,19 @@
     .btn {
         @apply text-blue-dark bg-white border-grey-200 rounded-none p-0;
         @apply min-w-[44px] min-h-[44px];
-
-        &:hover, &:focus {
-            @apply z-20;
-        }
+        border: 1px solid #DFDFDF;
         @apply text-xs leading-[14px] font-normal;
         &-active {
             @apply bg-green text-white font-bold;
+        }
+        &:not(:last-of-type) {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        &:not(:first-of-type) {
+            margin-left: -1px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
         }
     }
 }
