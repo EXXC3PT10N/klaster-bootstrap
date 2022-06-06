@@ -1,0 +1,21 @@
+.features__title {
+	&.active {
+		& + .features__desc {
+			@apply max-h-full;
+			@apply pt-[28px];
+		}
+		svg {
+			@apply rotate-180;
+		}
+	}
+	svg {
+		@apply rotate-0 cursor-pointer;
+		@apply transition-transform;
+		@apply lg:hidden;
+	}
+}
+.features__desc {
+	@apply max-h-0 lg:max-h-full lg:py-0 ;
+	@apply transition-[max-height,padding];
+	@apply overflow-hidden;
+}

@@ -1,0 +1,15 @@
+nav {
+    ul {
+        @apply max-h-0 overflow-hidden;
+        @apply w-0 lg:w-auto ;
+        &.show {
+            @apply bg-beige-light min-h-screen absolute w-full left-[0px] top-[calc(100px-28px)] p-5 lg:p-0 pt-[60px];
+            @apply transition-[max-height,padding,background,] duration-500;
+            @apply text-center;
+            
+        }
+        .contact {
+            @apply lg:hidden;
+        }
+    }
+}

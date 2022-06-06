@@ -1,0 +1,13 @@
+// Add any custom base CSS can go here
+
+
+// Foundation
+// =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
+html {
+  @apply antialiased;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+body {
+  @apply font-prophet;
+}

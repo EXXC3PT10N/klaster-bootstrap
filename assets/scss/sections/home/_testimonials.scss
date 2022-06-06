@@ -1,0 +1,18 @@
+.carousel-testimonials {
+    .caption {
+        &::before {
+            content: "—";
+            position: relative;
+        }
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        .swiper-pagination-bullet {
+            @apply w-[14px] h-[14px] mx-[3px] border-green border-[1px] bg-transparent opacity-100;
+        }
+        .swiper-pagination-bullet-active {
+            @apply bg-green;
+        }
+    }
+}
+

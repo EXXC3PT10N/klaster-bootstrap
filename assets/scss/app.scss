@@ -1,0 +1,22 @@
+@import "lib/mixins";
+@import "lib/fonts";
+
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+//swiper
+//@import "../../node_modules/swiper/swiper-bundle.css";
+
+@import "lib/animations";
+
+@import "theme/base";
+@import "theme/typography";
+//@import "theme/form";
+
+//@import "theme/header"; 
+@import "theme/footer";
+//@import "theme/nav";
+
+@import "theme/components";
+//@import "theme/sections";

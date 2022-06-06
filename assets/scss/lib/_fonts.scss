@@ -1,0 +1,37 @@
+// !!! IMPORTANT !!! .woff2 format should be first
+@font-face {
+    font-family: 'Canela';
+    src: url('../../assets/font/Canela-Regular.woff2') format('woff2'),
+        url('../../assets/font/Canela-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../../assets/font/Canela-Light.woff2') format('woff2'),
+        url('../../assets/font/Canela-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prophet';
+    src: url('../../assets/font/ABCProphet-Regular.woff2') format('woff2'),
+        url('../../assets/font/ABCProphet-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prophet';
+    src: url('../../assets/font/ABCProphet-Light.woff2') format('woff2'),
+        url('../../assets/font/ABCProphet-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
