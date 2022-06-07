@@ -443,10 +443,10 @@ const defaultOptions = {
   maxNumberOfDates: 1,
   maxView: 3,
   minDate: null,
-  nextArrow: '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>',
+  nextArrow: '<svg class="transform rotate-180" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle class="group-hover:stroke-green transition group-hover:opacity-100" opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3"></circle><path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3" d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z" fill="#282828"><path></svg>',
   orientation: 'auto',
   pickLevel: 0,
-  prevArrow: '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>',
+  prevArrow: '<svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle class="group-hover:stroke-green transition group-hover:opacity-100" opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3"></circle><path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3" d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z" fill="#282828"><path></svg>',
   showDaysOfWeek: true,
   showOnClick: true,
   showOnFocus: true,
@@ -790,9 +790,9 @@ const pickerTemplate = optimizeTemplateHTML(`<div class="datepicker hidden">
     <div class="datepicker-header">
       <div class="datepicker-title bg-white dark:bg-gray-700 dark:text-white px-2 py-3 text-center font-semibold"></div>
       <div class="datepicker-controls flex justify-between mb-2">
-        <button type="button" class="bg-white dark:bg-gray-700 rounded-lg text-gray-500 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-gray-900 dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 prev-btn"></button>
+        <button type="button" class="group bg-white dark:bg-gray-700 rounded-lg text-gray-500 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-gray-900 dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 prev-btn"></button>
         <button type="button" class="text-sm rounded-lg text-gray-900 dark:text-white bg-white dark:bg-gray-700 font-semibold py-2.5 px-5 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 view-switch"></button>
-        <button type="button" class="bg-white dark:bg-gray-700 rounded-lg text-gray-500 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-gray-900 dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 next-btn"></button>
+        <button type="button" class="group bg-white dark:bg-gray-700 rounded-lg text-gray-500 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-gray-900 dark:hover:text-white text-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-gray-200 next-btn"></button>
       </div>
     </div>
     <div class="datepicker-main p-1"></div>

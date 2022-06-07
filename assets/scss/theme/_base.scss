@@ -44,6 +44,12 @@ html {
 }
 
 .datepicker {
+    &-main {
+        @apply p-0;
+    }
+    &-grid {
+        @apply w-full;
+    }
     .dark\:text-white {
         @apply text-black;
     }
@@ -53,32 +59,25 @@ html {
     }
 
     .datepicker-controls {
-        @apply flex h-[30px] mb-4;
-
+        @apply flex mb-4 p-0;
+        @apply mt-5;
         button {
-            @apply p-1 justify-start
+            @apply p-0 justify-start;
         }
 
         button:nth-of-type(2) {
             @apply -order-1 w-full text-left;
             @apply text-[18px] leading-[22px] font-bold;
+            
         }
 
         button:nth-of-type(1) {
             @apply mr-5;
-            background: url("/assets/images/icons/arrow-circle.svg") round;
-            svg {
-                visibility: hidden;
-            }
+            
+            
         }
 
-        button:nth-of-type(3) {
-            @apply transform rotate-180;
-            background: url("/assets/images/icons/arrow-circle.svg") round;
-            svg {
-                visibility: hidden;
-            }
-        }
+       
     }
 
     .days-of-week {
@@ -89,7 +88,7 @@ html {
     }
 
     .datepicker-cell {
-        @apply font-normal text-blue-dark p-3 leading-3;
+        @apply font-normal text-blue-dark w-11 h-11 flex items-center justify-center;
         border: 1px solid #DFDFDF;
 
         &:not(:last-of-type) {
@@ -111,7 +110,7 @@ html {
     }
 
     .text-sm {
-        @apply text-[12px]
+        @apply text-[12px] leading-[14px];
     }
 
 }
