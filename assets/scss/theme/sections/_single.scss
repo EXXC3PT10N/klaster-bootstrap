@@ -72,7 +72,8 @@
     border: 1px solid #D6D6D6;
     border-radius: 4px;
     @apply text-base  font-normal text-blue-dark;
-    background: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M7 10L12 15L17 10H7Z' fill='#302B3F'/></svg>") no-repeat;
+    background: url("/assets/images/icons/arrow-drop-down.svg") no-repeat;
+    appearance: none;
     background-position: right 5px top 50%;
     option {
         @apply text-base font-normal text-blue-dark;

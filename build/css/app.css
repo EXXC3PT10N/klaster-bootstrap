@@ -1074,9 +1074,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1200px;
   }
 }
-.pointer-events-none{
-  pointer-events: none;
-}
 .visible{
   visibility: visible;
 }
@@ -1149,6 +1146,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .row-start-1{
   grid-row-start: 1;
 }
+.m-2{
+  margin: 0.5rem;
+}
 .my-2\.5{
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
@@ -1211,8 +1211,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[15px\]{
   margin-bottom: 15px;
 }
-.mt-\[50px\]{
-  margin-top: 50px;
+.mb-\[20px\]{
+  margin-bottom: 20px;
+}
+.mb-2\.5{
+  margin-bottom: 0.625rem;
 }
 .mb-\[70px\]{
   margin-bottom: 70px;
@@ -1289,8 +1292,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[300px\]{
   height: 300px;
 }
-.h-20{
-  height: 5rem;
+.h-fit{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .h-5{
   height: 1.25rem;
@@ -1454,10 +1459,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: calc(30px * var(--tw-space-x-reverse));
   margin-left: calc(30px * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-y-\[10px\] > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10px * var(--tw-space-y-reverse));
+}
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.-space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(-1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(-1rem * var(--tw-space-y-reverse));
 }
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
@@ -1626,6 +1641,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-\[36px\]{
   padding-bottom: 36px;
 }
+.pb-\[36px\]{
+  padding-bottom: 36px;
+}
 .pt-\[12px\]{
   padding-top: 12px;
 }
@@ -1708,6 +1726,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(48 43 63 / var(--tw-text-opacity));
 }
+.text-grey-300{
+  --tw-text-opacity: 1;
+  color: rgb(196 196 196 / var(--tw-text-opacity));
+}
+.text-green-light{
+  color: rgba(35, 200, 120, 0.5);;
+}
+.text-green{
+  --tw-text-opacity: 1;
+  color: rgb(35 200 120 / var(--tw-text-opacity));
+}
 .opacity-0{
   opacity: 0;
 }
@@ -1759,6 +1788,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.duration-75{
+  transition-duration: 75ms;
 }
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -1848,6 +1880,12 @@ html{
 
 .text-h4{
   font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.sidebar--heading{
+  font-size: 18px;
   font-weight: 500;
   line-height: 34px;
 }
@@ -2130,7 +2168,10 @@ header .header-menu li a:hover{
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(48 43 63 / var(--tw-text-opacity));
-  background: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M7 10L12 15L17 10H7Z' fill='#302B3F'/></svg>") no-repeat;
+  background: url("/assets/images/icons/arrow-drop-down.svg") no-repeat;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: right 5px top 50%;
 }
 .select option{
@@ -2379,8 +2420,8 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 @media (min-width: 1024px){
-  .lg\:col-span-8{
-    grid-column: span 8 / span 8;
+  .lg\:col-span-6{
+    grid-column: span 6 / span 6;
   }
   .lg\:col-span-4{
     grid-column: span 4 / span 4;

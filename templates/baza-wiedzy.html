@@ -170,16 +170,14 @@
             <div class="grid-custom grid-custom__gapped">
                 <div
                     class="sidebar bg-white rounded col-span-full lg:col-span-4 flex flex-col h-fit pt-[12px] pr-[15px] pl-2.5">
-                    <div class="dropdown"><label tabindex="0" class="sidebar--heading">Sortuj wg:</label><select
-                            class="select w-full">
-                            <option value="Najnowsze">Najnowsze
-                                <!-- -->
-                            </option>
-                            <option value="Najstarsze">Najstarsze
-                                <!-- -->
-                            </option>
-                        </select></div>
-                    <div><label class="sidebar--heading">Szukaj</label>
+                    <div class="dropdown mb-[20px]">
+                        <label tabindex="0" class="sidebar--heading block  mb-[5px]">Sortuj wg:</label>
+                        <select class="select w-full">
+                            <option value="Najnowsze">Najnowsze </option>
+                            <option value="Najstarsze">Najstarsze </option>
+                        </select>
+                    </div>
+                    <div class="mb-[20px]"><label class="sidebar--heading block mb-[10px]">Szukaj</label>
                         <form>
                             <div class="search search__baza-wiedzy relative"><input type="search" id="default-search"
                                     class="outline-none " placeholder="Znajdz artykuł" required=""><button
@@ -190,110 +188,66 @@
                                     </svg></button></div>
                         </form>
                     </div>
-                    <div><label for="" class="sidebar--heading">Kategorie</label>
-                        <ul>
+                    <div>
+                        <label for="" class="sidebar--heading block">Kategorie</label>
+                        <ul class="flex flex-col space-y-[10px] py-[10px] ">
                             <li>
-                                <div class="collapse"><input type="checkbox" class="peer">
-                                    <div
-                                        class="collapse-title p-0 text-primary-content peer-checked:text-secondary-content">
-                                        <p>Kategoria 1</p>
-                                        <div class="flex absolute p-0 top-4 right-0 items-center pointer-events-none">
-                                            <span
-                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
-                                                    style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
-                                                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
-                                                        alt="" aria-hidden="true"
-                                                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"></span><img
-                                                    src="/_next/static/media/arrow-drop-down.b202502a.svg"
-                                                    decoding="async" data-nimg="intrinsic" class=""
-                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                                    srcset="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"><noscript><img
-                                                        srcSet="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"
-                                                        src="/_next/static/media/arrow-drop-down.b202502a.svg"
-                                                        decoding="async" data-nimg="intrinsic"
-                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                                        class="" loading="lazy" /></noscript></span></div>
-                                    </div>
-                                    <div
-                                        class="collapse-content text-primary-content peer-checked:text-secondary-content">
-                                        <ul>
-                                            <li>
-                                                <p>Podkategoria 1</p>
-                                            </li>
-                                            <li>
-                                                <p>Podkategoria 2</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <button type="button"
+                                    class="flex items-center w-full rounded-lg transition duration-75 group"
+                                    aria-controls="category-1" data-collapse-toggle="category-1">
+                                    <span class="flex-1 ml-3 text-left whitespace-nowrap text-blue-dark"
+                                        sidebar-toggle-item>Kategoria 1</span>
+                                    <img src="/assets/images/icons/arrow-drop-down.svg">
+                                </button>
+                                <ul id="category-1" class="hidden py-[10px] space-y-[10px] pl-3">
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center pl-[12px] w-full rounded-lg transition duration-75 group text-grey-300">Podkategoria
+                                            1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center pl-[12px] w-full rounded-lg transition duration-75 group text-grey-300">Podkategoria
+                                            2</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <div class="collapse"><input type="checkbox" class="peer">
-                                    <div
-                                        class="collapse-title text-primary-content peer-checked:text-secondary-content">
-                                        <p class="">Kategoria 2</p>
-                                        <div class="flex absolute top-4 right-0 items-center pr-3 pointer-events-none">
-                                            <span
-                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
-                                                    style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
-                                                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
-                                                        alt="" aria-hidden="true"
-                                                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"></span><img
-                                                    src="/_next/static/media/arrow-drop-down.b202502a.svg"
-                                                    decoding="async" data-nimg="intrinsic" class=""
-                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                                    srcset="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"><noscript><img
-                                                        srcSet="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"
-                                                        src="/_next/static/media/arrow-drop-down.b202502a.svg"
-                                                        decoding="async" data-nimg="intrinsic"
-                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                                        class="" loading="lazy" /></noscript></span></div>
-                                    </div>
-                                    <div
-                                        class="collapse-content text-primary-content peer-checked:text-secondary-content">
-                                        <ul>
+                                <button type="button"
+                                    class="flex items-center w-full rounded-lg transition duration-75 group"
+                                    aria-controls="category-2" data-collapse-toggle="category-2">
+                                    <span class="flex-1 ml-3 text-left whitespace-nowrap text-green-light"
+                                        sidebar-toggle-item>Kategoria 2</span>
+                                    <img src="/assets/images/icons/arrow-drop-down.svg">
+                                </button>
+                                <ul id="category-2" class="hidden py-[10px] space-y-[10px] pl-3">
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center pl-[12px] w-full rounded-lg transition duration-75 group text-grey-300">Podkategoria
+                                            1</a>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="flex items-center w-full rounded-lg transition duration-75 group"
+                                            aria-controls="category-2-1" data-collapse-toggle="category-2-1">
+                                            <span class="flex-1 ml-3 text-left whitespace-nowrap text-green-light"
+                                                sidebar-toggle-item>Podkategoria 2</span>
+                                            <img src="/assets/images/icons/arrow-drop-down.svg">
+                                        </button>
+                                        <ul id="category-2-1" class="hidden py-[10px] space-y-[10px] pl-3">
                                             <li>
-                                                <p class="">Podkategoria 1</p>
+                                                <a href="#"
+                                                    class="flex items-center pl-[12px] w-full rounded-lg transition duration-75 group text-green">PodPodkategoria
+                                                    1</a>
                                             </li>
                                             <li>
-                                                <div class="collapse"><input type="checkbox" class="peer">
-                                                    <div
-                                                        class="collapse-title text-primary-content peer-checked:text-secondary-content">
-                                                        <p class="">Podkategoria 2</p>
-                                                        <div
-                                                            class="flex absolute top-4 right-0 items-center pr-3 pointer-events-none">
-                                                            <span
-                                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
-                                                                    style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
-                                                                        style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
-                                                                        alt="" aria-hidden="true"
-                                                                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"></span><img
-                                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                                    decoding="async" data-nimg="intrinsic" class=""
-                                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"><noscript><img
-                                                                        srcSet="/_next/static/media/arrow-drop-down.b202502a.svg 1x, /_next/static/media/arrow-drop-down.b202502a.svg 2x"
-                                                                        src="/_next/static/media/arrow-drop-down.b202502a.svg"
-                                                                        decoding="async" data-nimg="intrinsic"
-                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                                                        class="" loading="lazy" /></noscript></span>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="collapse-content text-primary-content peer-checked:text-secondary-content">
-                                                        <ul>
-                                                            <li>
-                                                                <p class="">PodPodkategoria 1</p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="">PodPodkategoria 2</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                                <a href="#"
+                                                    class="flex items-center pl-[12px] w-full rounded-lg transition duration-75 group ">PodPodkategoria
+                                                    2</a>
                                             </li>
                                         </ul>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -301,8 +255,8 @@
                 <div class=" posts-main grid grid-cols-8 gap-[30px] mb-[55px] col-span-full lg:col-span-8">
                     <div class="col-span-full lg:col-span-4">
                         <div class="flex flex-col "><a href="">
-                            <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
-                        </a>
+                                <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
+                            </a>
                             <ul class="filters text-single--filters flex flex-wrap pt-5">
                                 <li><a href="">Kategoria</a></li>
                             </ul>
@@ -311,9 +265,44 @@
                                 </a></div>
                         </div>
                     </div>
-                    
-                    
-                    
+                    <div class="col-span-full lg:col-span-4">
+                        <div class="flex flex-col "><a href="">
+                                <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
+                            </a>
+                            <ul class="filters text-single--filters flex flex-wrap pt-5">
+                                <li><a href="">Kategoria</a></li>
+                            </ul>
+                            <div class="text-h3 pt-4"><a href="">
+                                    <h3>Lorem ipsum dolor sit consectetur</h3>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-span-full lg:col-span-4">
+                        <div class="flex flex-col "><a href="">
+                                <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
+                            </a>
+                            <ul class="filters text-single--filters flex flex-wrap pt-5">
+                                <li><a href="">Kategoria</a></li>
+                            </ul>
+                            <div class="text-h3 pt-4"><a href="">
+                                    <h3>Lorem ipsum dolor sit consectetur</h3>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-span-full lg:col-span-4">
+                        <div class="flex flex-col "><a href="">
+                                <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
+                            </a>
+                            <ul class="filters text-single--filters flex flex-wrap pt-5">
+                                <li><a href="">Kategoria</a></li>
+                            </ul>
+                            <div class="text-h3 pt-4"><a href="">
+                                    <h3>Lorem ipsum dolor sit consectetur</h3>
+                                </a></div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <div class="pagination flex justify-center">

@@ -19,6 +19,11 @@
     @apply text-[28px] leading-[34px] font-medium;
 }
 
+.sidebar--heading {
+    //28/34
+    @apply text-[18px] leading-[34px] font-medium;
+}
+
 .text-single {
     &--filters {
         //12/20
