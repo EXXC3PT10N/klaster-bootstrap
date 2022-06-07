@@ -72,12 +72,15 @@
       <!-- header -->
       <section class="main-index pt-[60px] pb-[100px]">
          <div class="container relative">
-            <div class="grid-custom grid-custom__gapped">
+            <div class="grid-custom grid-custom__gapped-large">
                <div class="col-span-full lg:col-span-4 mr-[45px]">
                   <div class="text-h2 underline-custom">
                      <h2><span class="text-green">W</span>ydarzenia</h2>
                   </div>
-                  <div class="mt-[66px] flex items-center justify-center">
+                  <div>
+                     <div inline-datepicker datepicker-format="dd/mm/yyyy" data-date="05/06/2022"></div>
+                  </div>
+                  <div class="flex items-center justify-center">
                      <a href="" class="btn btn-primary btn-navbar">Przejdź do wydarzeń</a>
                   </div>
                </div>
@@ -456,6 +459,7 @@
       <!-- index end -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script type='text/javascript' src='/build/js/app.js' id='app-js'></script>
+      <script type='text/javascript' src='/assets/js/utils/datepicker.js' ></script>
    </body>
    <footer class="bg-blue-dark text-white pt-[72px] pb-[120px]">
       <div class="container">
