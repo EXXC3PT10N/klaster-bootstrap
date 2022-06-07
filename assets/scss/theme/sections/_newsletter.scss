@@ -1,0 +1,24 @@
+.newsletter {
+    background-image: url("/assets/images/backgrounds/newsletter-background.png");
+    @apply bg-no-repeat bg-cover bg-center;
+    input {
+        border: 1px solid #EEEEEE;
+        @apply focus:ring-green focus:outline-none focus:ring-1;
+        font-size: 13px;
+        line-height: 16px;
+        
+        @apply h-10 my-[5px];
+        @apply font-normal;
+        &::placeholder {
+            color: #6C757D;
+        }
+    }
+}
+.o-klastrze {
+    background-image: url("/assets/images/backgrounds/oklastrze-background.png");
+    @apply bg-no-repeat bg-cover bg-right;
+}
+.all-firmy {
+    background-image: url("/assets/images/backgrounds/firmy-backgorund.png");
+    @apply bg-white bg-no-repeat bg-cover bg-left;
+}

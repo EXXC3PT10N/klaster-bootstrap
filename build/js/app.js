@@ -22392,15 +22392,15 @@ var InitVueComponents = function InitVueComponents() {
 }; // Initialise our components on jQuery.ready…
 
 
-jQuery(function ($) {// Static Functions
+jQuery(function ($) {
+  // Static Functions
   //fSmoothScroll()
   //InitVueComponents()
   //fAccordion()
   // plugins
   //Alpine.start()
   // Async Functions
-  //fCarousels.init()
-  //ffScroll.init()
+  fCarousels.init(); //ffScroll.init()
   //fGSAPController.init()
 });
 
@@ -22427,173 +22427,41 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var sliders = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var gallerySlider, carouselTestimonials, updatesSlider, contentBox, SwiperLib, Swiper, gallerySliderSwiper, breakpoint, _updatesSlider, breakpointChecker, enableSwiper, _breakpoint, contentBoxSwiper, _breakpointChecker, _enableSwiper;
-
+    var HeroSlider, SwiperLib, Swiper, HeroSliderSwiper;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            gallerySlider = document.querySelectorAll('.swiper-gallery') !== null;
-            carouselTestimonials = document.querySelectorAll('.carousel-testimonials') !== null;
-            updatesSlider = document.querySelectorAll('.updatesSlider') !== null;
-            contentBox = document.querySelectorAll('.content-box-swiper') !== null; // Execute code if You really need it
+            HeroSlider = document.querySelectorAll('.hero-slider') !== null; // Execute code if You really need it
 
-            if (!(gallerySlider || carouselTestimonials || updatesSlider)) {
-              _context.next = 13;
+            if (!HeroSlider) {
+              _context.next = 7;
               break;
             }
 
-            _context.next = 7;
+            _context.next = 4;
             return __webpack_require__.e(/*! import() */ "node_modules_swiper_swiper-bundle_esm_js").then(__webpack_require__.bind(__webpack_require__, /*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js"));
 
-          case 7:
+          case 4:
             SwiperLib = _context.sent;
             Swiper = SwiperLib["default"];
 
-            if (gallerySlider) {
-              gallerySliderSwiper = new Swiper('.swiper-gallery', {
-                lazy: false,
+            if (HeroSlider) {
+              HeroSliderSwiper = new Swiper('.hero-slider', {
                 slidesPerView: 1,
                 spaceBetween: 0,
-                loop: false,
-                effect: 'fade',
-                fadeEffect: {
-                  crossFade: true
-                },
-                simulateTouch: false,
-                autoplay: {
-                  delay: 5000
-                },
-                speed: 2000,
+                loop: true,
+                allowTouchMove: true,
+                disableOnInteraction: true,
                 pagination: {
-                  el: '.swiper-pagination',
+                  el: '.hero-slider__pagination',
                   type: 'bullets',
                   clickable: true
                 }
               });
             }
 
-            if (carouselTestimonials) {
-              document.querySelectorAll('.carousel-testimonials').forEach(function (el) {
-                var carouselTestimonialSwiper = new Swiper(el, {
-                  slidesPerView: 1,
-                  spaceBetween: 24,
-                  loop: false,
-                  effect: 'fade',
-                  fadeEffect: {
-                    crossFade: true
-                  },
-                  pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                    clickable: true
-                  },
-                  breakpoints: {
-                    1023: {
-                      pagination: false
-                    }
-                  }
-                });
-                var prevBtn = document.querySelector('.carousel-testimonials__nav__prev'),
-                    nextBtn = document.querySelector('.carousel-testimonials__nav__next');
-
-                if (prevBtn != null) {
-                  prevBtn.addEventListener('click', function () {
-                    carouselTestimonialSwiper.slidePrev();
-                  }, false);
-                }
-
-                if (nextBtn != null) {
-                  nextBtn.addEventListener('click', function () {
-                    carouselTestimonialSwiper.slideNext();
-                  }, false);
-                }
-              });
-            }
-
-            if (updatesSlider) {
-              breakpoint = window.matchMedia('(min-width:1023px)');
-
-              breakpointChecker = function breakpointChecker() {
-                if (breakpoint.matches == false) {
-                  if (_updatesSlider !== undefined) _updatesSlider.destroy(true, true);
-                  return;
-                } else if (breakpoint.matches == true) {
-                  return enableSwiper();
-                }
-              };
-
-              enableSwiper = function enableSwiper() {
-                _updatesSlider = new Swiper('.updatesSlider', {
-                  slidesPerView: 4,
-                  spaceBetween: 18,
-                  loop: false,
-                  breakpoints: {
-                    1920: {
-                      spaceBetween: 28
-                    }
-                  }
-                });
-                var prevBtn = document.querySelector('.carousel-testimonials__nav__prev'),
-                    nextBtn = document.querySelector('.carousel-testimonials__nav__next');
-
-                if (prevBtn != null) {
-                  prevBtn.addEventListener('click', function () {
-                    _updatesSlider.slidePrev();
-                  }, false);
-                }
-
-                if (nextBtn != null) {
-                  nextBtn.addEventListener('click', function () {
-                    _updatesSlider.slideNext();
-                  }, false);
-                }
-              };
-
-              breakpointChecker();
-              breakpoint.addEventListener("change", function () {
-                breakpointChecker();
-              });
-            }
-
-            if (contentBox) {
-              _breakpoint = window.matchMedia('(max-width:1023px)');
-
-              _breakpointChecker = function _breakpointChecker() {
-                if (_breakpoint.matches == false) {
-                  if (contentBoxSwiper !== undefined) contentBoxSwiper.destroy(true, true);
-                  return;
-                } else if (_breakpoint.matches == true) {
-                  return _enableSwiper();
-                }
-              };
-
-              _enableSwiper = function _enableSwiper() {
-                contentBoxSwiper = new Swiper('.content-box-swiper', {
-                  slidesPerView: 1,
-                  spaceBetween: 24,
-                  loop: false,
-                  pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                    clickable: true
-                  },
-                  breakpoints: {
-                    1023: {
-                      pagination: false
-                    }
-                  }
-                });
-              };
-
-              _breakpointChecker();
-
-              _breakpoint.addEventListener("change", function () {
-                _breakpointChecker();
-              });
-            }
-
-          case 13:
+          case 7:
           case "end":
             return _context.stop();
         }

@@ -1,0 +1,10 @@
+header {
+    .header-menu {
+        li {
+            a {
+                @apply transition-[bottom] relative bottom-0;
+                @apply hover:bottom-2;
+            }
+        }
+    }
+}

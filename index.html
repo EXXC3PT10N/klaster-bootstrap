@@ -1,84 +1,505 @@
 <!doctype html>
 <html lang="en" class="no-js">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Klaster</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/icons/main-logo.svg">
-    <link rel='stylesheet' id='app-css' href='/build/css/app.css' type='text/css' media='all' />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-</head>
-
-<body class="home ">
-    <header class="flex flex-wrap items-center pt-[30px] pr-[20px] pb-[20px] pl-[30px] bg-blue-dark text-white">
-        <div class="mr-7 shrink-0 flex items-center space-x-[10px]"><a class="flex items-center space-x-[10px]">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Klaster</title>
+      <link rel="icon" type="image/x-icon" href="/assets/images/icons/main-logo.svg">
+      <link rel='stylesheet' id='app-css' href='/build/css/app.css' type='text/css' media='all' />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet" />
+   </head>
+   <body class="home ">
+      <header class="flex flex-wrap items-center px-5 py-[30px] bg-blue-dark text-white">
+         <div class="mr-7 shrink-0 flex items-center space-x-[10px]"><a class="flex items-center space-x-[10px]">
             <a href="/"><img src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
             <a href=""><img src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
-        </div>
-        <ul class="flex mr-10 grow font-fira-sans">
+         </div>
+         <ul class="header-menu flex mr-10 grow">
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/wiadomosci.html">Wiadomości</a></li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/o-klastrze.html">O klastrze</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/oferta-klastra.html">Oferta Klastra</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/gielda-uslug.html">Giełda Usług</a></li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/oferta-klastra.html">Oferta
+               Klastra</a>
+            </li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/gielda-uslug.html">Giełda Usług</a>
+            </li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/showroom.html">Showroom</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/projekty.html">Projekty</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/akademia-recyklingu.html">Akademia Recyklingu</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/baza-wiedzy.html">Baza wiedzy</a></li>
+            <li class="text-[18px] leading-6"><a class="p-[10px] active" href="/templates/projekty.html">Projekty</a></li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/akademia-recyklingu.html">Akademia
+               Recyklingu</a>
+            </li>
+            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/baza-wiedzy.html">Baza wiedzy</a>
+            </li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/kontakt.html">Kontakt</a></li>
             <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/english.html">English</a></li>
-        </ul><a class="btn btn-primary btn-navbar" href="/">strefa klastra</a>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type='text/javascript' src='/build/js/app.js' id='app-js'></script>
-</body>
-<footer class="bg-blue-dark text-white pt-[72px] pb-[120px]">
-    <div class="container">
-        <div class="grid-custom grid-custom__gapped">
-            <div class="col-span-full md:col-span-5 flex">
-                <div class="shrink-0"><a href="/"><img src="/assets/images/icons/main-logo.svg" alt=""></a></div>
-                <div class="ml-10 text">
-                    <div class="text-h5">
-                        <p>O firmie</p>
-                    </div>
-                    <div class="text-base">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet dui quis risus
-                            semper, vulputate rutrum quam molestie. </p>
+         </ul>
+         <a class="btn btn-primary btn-navbar" href="/">strefa klastra</a>
+      </header>
+      <!-- index start -->
+      <!-- hero -->
+      <div class="hero relative h-[650px] flex items-end pb-[128px]">
+         <div class="relative container z-10">
+            <div class="text-h1">
+               <h1>Lorem ipsum dolor <br/>sit amet consectetur</h1>
+            </div>
+            <div class="text-h5 text-white mt-2.5">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>Integer quam nibh eget nulla est interdum.
+            </div>
+         </div>
+         <div class="swiper-container hero-slider absolute top-0 h-full w-full overflow-hidden">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide relative"> 
+                  <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+                     src="/assets/images/hero/index-hero.png" alt="">
+               </div>
+               <div class="swiper-slide"> 
+                  <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+                     src="/assets/images/hero/index-hero.png" alt="">
+               </div>
+               <div class="swiper-slide"> 
+                  <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+                     src="/assets/images/hero/index-hero.png" alt="">
+               </div>
+            </div>
+            <div class="hero-slider__pagination flex justify-center"></div>
+         </div>
+      </div>
+      <!-- end hero -->
+      <!-- header -->
+      <section class="main-index pt-[60px] pb-[100px]">
+         <div class="container relative">
+            <div class="grid-custom grid-custom__gapped">
+               <div class="col-span-full lg:col-span-4 mr-[45px]">
+                  <div class="text-h2 underline-custom">
+                     <h2><span class="text-green">W</span>ydarzenia</h2>
+                  </div>
+                  <div class="mt-[66px] flex items-center justify-center">
+                     <a href="" class="btn btn-primary btn-navbar">Przejdź do wydarzeń</a>
+                  </div>
+               </div>
+               <div class="col-span-full lg:col-span-4">
+                  <div class="flex flex-wrap items-center justify-between underline-custom mb-7">
+                     <div class="text-h2">
+                        <h2><span class="text-green">W</span>iadomości</h2>
+                     </div>
+                     <div class="arrows flex justify-center self-end mb-2 space-x-5"><a class="previous group cursor-pointer"><svg class=""
+                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="group-hover:stroke-green transition group-hover:opacity-100"
+                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                        </circle>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100"
+                            opacity=".3"
+                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                            fill="#282828"></path>
+                    </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
+                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="transition group-hover:stroke-green group-hover:opacity-100"
+                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                        </circle>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100"
+                            opacity=".3"
+                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                            fill="#282828"></path>
+                    </svg></a></div>
+                  </div>
+                  <a href="">
+                     <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
+                  </a>
+                  <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
+                     <li><a href="">Kategoria</a></li>
+                 </ul>
+                 <div class="text-h3 mt-4">
+                     <h3>Lorem ipsum dolor sit consectetur</h3>
+                 </div>
+               </div>
+               <div class="col-span-full lg:col-span-4">
+                  <div class="flex flex-wrap items-center justify-between underline-custom mb-7">
+                     <div class="text-h2">
+                        <h2><span class="text-green">B</span>aza wiedzy</h2>
+                     </div>
+                     <div class="arrows flex justify-center self-end mb-2 space-x-5"><a class="previous group cursor-pointer"><svg class=""
+                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="group-hover:stroke-green transition group-hover:opacity-100"
+                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                        </circle>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100"
+                            opacity=".3"
+                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                            fill="#282828"></path>
+                    </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
+                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="transition group-hover:stroke-green group-hover:opacity-100"
+                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                        </circle>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100"
+                            opacity=".3"
+                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                            fill="#282828"></path>
+                    </svg></a></div>
+                  </div>
+                  <a href="">
+                     <img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt="">
+                  </a>
+                  <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
+                     <li><a href="">Kategoria</a></li>
+                 </ul>
+                 <div class="text-h3 mt-4">
+                     <h3>Lorem ipsum dolor sit consectetur</h3>
+                 </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end header -->
+      <section class="o-klastrze pt-[60px] pb-[45px]">
+         <div class="container relative">
+            <div class="grid grid-cols-12 gap-[30px] w-[calc(100%+30px)]">
+               <div class="-ml-[30px] col-span-10 col-start-3">
+                  <div class="text-h2 relative flex mb-[45px]">
+                     <div class="underline-custom w-[350px] ">
+                        <h2>O <span class="text-green">Klastrze</span></h2>
+                     </div>
+                  </div>
+                  <div class="text-desc mb-5">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+                  </div>
+                  <div class="col-span-full lg:col-span-8 lg:col-start-3 grid grid-cols-8 gap-[70px]">
+                     <div class="col-span-full lg:col-span-4">
+                        <div class="bg-white rounded shadow-sm px-[30px] py-5">
+                           <div class="text-h3 underline-custom mb-[25px]">
+                              <h3>Kim <span class="text-green">jesteśmy? </span></h3>
+                           </div>
+                           <div class="text-desc mb-5">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+                           </div>
+                           <a href=""
+                              class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
+                              Dowiedz
+                              się więcej 
+                              <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                       d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                    </path>
+                                 </g>
+                                 <defs>
+                                    <clipPath id="a">
+                                       <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                                       </path>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-span-full lg:col-span-4">
+                        <div class="bg-white rounded shadow-sm px-[30px] py-5">
+                           <div class="text-h3 underline-custom mb-[25px]">
+                              <h3>Dołącz <span class="text-green">do NAS!!!! </span></h3>
+                           </div>
+                           <div class="text-desc mb-5">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+                           </div>
+                           <a href=""
+                              class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
+                              Dowiedz
+                              się więcej 
+                              <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                       d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                    </path>
+                                 </g>
+                                 <defs>
+                                    <clipPath id="a">
+                                       <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                                       </path>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mt-[45px] flex items-center justify-center">
+                     <a href="" class="btn btn-primary btn-navbar">Poznaj ofertę</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="all-firmy pt-[60px] pb-[77px]">
+         <div class="container relative">
+            <div class="grid-custom grid-custom__gapped">
+               <div class="col-span-full lg:col-span-4">
+                  <div class="text-h2 underline-custom">
+                     <h2>KNR <span class="text-green">Green</span></h2>
+                  </div>
+                  <div class="text-h5 mt-[5px] mb-[25px]">
+                     <p><span class="text-green">Certyfikacja </span>firm</p>
+                  </div>
+                  <div class="text-desc mb-[25px]">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+                  </div>
+                  <a href=""
+                     class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
+                     Dowiedz
+                     się więcej 
+                     <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
+                           stroke-linejoin="round">
+                           <path
+                              d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                           </path>
+                        </g>
+                        <defs>
+                           <clipPath id="a">
+                              <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                              </path>
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </a>
+               </div>
+               <div class="col-span-full lg:col-span-4">
+                <div class="text-h2 underline-custom">
+                   <h2>Pro<span class="text-green">Goz</span></h2>
+                </div>
+                <div class="text-h5 mt-[5px] mb-[25px]">
+                   <p>Cyrkularny <span class="text-green"> model </span>biznesowy</p>
+                </div>
+                <div class="text-desc mb-[25px]">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+                </div>
+                <a href=""
+                   class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
+                   Dowiedz
+                   się więcej 
+                   <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
+                         stroke-linejoin="round">
+                         <path
+                            d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                         </path>
+                      </g>
+                      <defs>
+                         <clipPath id="a">
+                            <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                            </path>
+                         </clipPath>
+                      </defs>
+                   </svg>
+                </a>
+               </div>
+               <div class="col-span-full lg:col-span-4">
+                <div class="text-h2 underline-custom">
+                   <h2>Pro<span class="text-green">Inno</span></h2>
+                </div>
+                <div class="text-h5 mt-[5px] mb-[25px]">
+                   <p>Transformacja <span class="text-green">4.0</span></p>
+                </div>
+                <div class="text-desc mb-[25px]">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+                </div>
+                <a href=""
+                   class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
+                   Dowiedz
+                   się więcej 
+                   <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
+                         stroke-linejoin="round">
+                         <path
+                            d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                         </path>
+                      </g>
+                      <defs>
+                         <clipPath id="a">
+                            <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                            </path>
+                         </clipPath>
+                      </defs>
+                   </svg>
+                </a>
+               </div>
+            </div>
+            <div class="w-full flex items-center justify-center mt-[100px] mb-[30px]">
+                <div class="text-h2">
+                    <h2><span class="text-green">Najnowsze</span> certyfikacje KNR <span class="text-green">Green</span</h2>
+                </div>
+            </div>
+            <div class="grid-custom grid-custom__gapped mb-7">
+                <div class="col-span-full lg:col-span-4">
+                    <div class="flex items-center">
+                        <img src="/assets/images/firma-img.png" alt="" class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
+                        <div class="ml-[30px] text flex flex-col">
+                            <div class="text-[#747474] text-[13px] leading-[24px]">
+                                <time>data przyznania</time>
+                            </div>
+                            <div class="text-h4 font-medium">
+                                <h3>Nazwa firmy</h3>
+                            </div>
+                            <div class="text-desc">
+                                <p>Typ certyfikatu</p>
+                                <p>Branża</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col-span-full lg:col-span-4">
+                    <div class="flex items-center">
+                        <img src="/assets/images/firma-img.png" alt="" class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
+                        <div class="ml-[30px] text flex flex-col">
+                            <div class="text-[#747474] text-[13px] leading-[24px]">
+                                <time>data przyznania</time>
+                            </div>
+                            <div class="text-h4 font-medium">
+                                <h3>Nazwa firmy</h3>
+                            </div>
+                            <div class="text-desc">
+                                <p>Typ certyfikatu</p>
+                                <p>Branża</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-full lg:col-span-4">
+                    <div class="flex items-center">
+                        <img src="/assets/images/firma-img.png" alt="" class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
+                        <div class="ml-[30px] text flex flex-col">
+                            <div class="text-[#747474] text-[13px] leading-[24px]">
+                                <time>data przyznania</time>
+                            </div>
+                            <div class="text-h4 font-medium">
+                                <h3>Nazwa firmy</h3>
+                            </div>
+                            <div class="text-desc">
+                                <p>Typ certyfikatu</p>
+                                <p>Branża</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows flex justify-center space-x-5 mb-[36px]"><a class="previous group cursor-pointer"><svg class=""
+               width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <circle class="group-hover:stroke-green transition group-hover:opacity-100"
+                   opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+               </circle>
+               <path class="transition group-hover:fill-green group-hover:opacity-100"
+                   opacity=".3"
+                   d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                   fill="#282828"></path>
+           </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
+               width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <circle class="transition group-hover:stroke-green group-hover:opacity-100"
+                   opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+               </circle>
+               <path class="transition group-hover:fill-green group-hover:opacity-100"
+                   opacity=".3"
+                   d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                   fill="#282828"></path>
+           </svg></a></div>
+            <div class="flex items-center justify-center">
+                <a href="" class="btn btn-primary btn-navbar">Poznaj wszystkie firmy</a>
+            </div>
+         </div>
+      </section>
+      <!-- newsletter  -->
+      <section class="newsletter pt-[50px] pb-[84px]">
+         <div class="container">
+            <div class="grid-custom grid-custom__gapped">
+               <div class="col-span-full lg:col-span-7">
+                  <div class="text-h3 underline-custom underline-custom--dark mb-[30px]">
+                     <h3>Zapisz się do Newslettera</h3>
+                  </div>
+                  <div class="text-desc">
+                     <p>Rhoncus diam nullam hac nullam tempus amet bibendum. Et et dui quis vitae semper netus eget dui. Non pretium ullamcorper amet proin vitae etiam eu id facilisi. Netus lorem fames est, ultrices. Elementum sed morbi tempus purus velit maecenas. Lobortis fermentum, urna, sed ultrices nisi, id adipiscing a vitae. Iaculis sapien aenean tortor id.</p>
+                  </div>
+                  <div class="grid grid-cols-7 gap-x-[30px] mt-[30px]">
+                     <div class="col-span-5">
+                        <input type="text" id="company" class="rounded-sm block w-full py-3 pl-2.5" placeholder="Podaj swój email" required>
+                     </div>
+                     <div class="col-span-2">
+                        <button href="" class="btn btn-primary btn-navbar">ZAPISZ MNIE</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end newsletter  -->
+      <!-- fundusz start -->
+      <div class="relative bg-white py-[30px]">
+         <div class="container">
+            <div class="w-full hidden md:flex">
+               <img src="/assets/images/fundusz-desktop.png" alt="">
+            </div>
+            <div class="w-full flex flex-col md:hidden">
+               <img src="/assets/images/fundusz.png" alt="">
+               <img src="/assets/images/polska_edited.jpg" alt="">
+               <img src="/assets/images/unia.png" alt="">
+            </div>
+         </div>
+      </div>
+      <!-- fundusz end -->
+      <!-- index end -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script type='text/javascript' src='/build/js/app.js' id='app-js'></script>
+   </body>
+   <footer class="bg-blue-dark text-white pt-[72px] pb-[120px]">
+      <div class="container">
+         <div class="grid-custom grid-custom__gapped">
+            <div class="col-span-full md:col-span-5 flex">
+               <div class="shrink-0"><a href="/"><img src="/assets/images/icons/main-logo.svg" alt=""></a></div>
+               <div class="ml-10 text">
+                  <div class="text-h5">
+                     <p>O firmie</p>
+                  </div>
+                  <div class="text-base">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet dui quis risus
+                        semper, vulputate rutrum quam molestie. 
+                     </p>
+                  </div>
+               </div>
             </div>
             <div class="col-span-full md:col-span-3">
-                <div class="text-h5">
-                    <p>Kontakt</p>
-                </div>
-                <div class="text-base">
-                    <div class="element flex space-x-1"><img src="/assets/images/icons/Phone.svg" alt=""><a href="">ul. Wybrana 3/5,
-                            00-000 Miasto</a></div>
-                    <div class="element flex space-x-1"><img src="/assets/images/icons/Email.svg" alt=""><a
-                            href="tel:+48 123 456 789">+48 123 456 789</a></div>
-                    <div class="element flex space-x-1"><img src="/assets/images/icons/Location.svg" alt=""><a
-                            href="mailto:kontakt@firma.com">kontakt@firma.com</a></div>
-                </div>
+               <div class="text-h5">
+                  <p>Kontakt</p>
+               </div>
+               <div class="text-base">
+                  <div class="element flex space-x-1"><img src="/assets/images/icons/Phone.svg" alt=""><a href="">ul. Wybrana 3/5,
+                     00-000 Miasto</a>
+                  </div>
+                  <div class="element flex space-x-1"><img src="/assets/images/icons/Email.svg" alt=""><a
+                     href="tel:+48 123 456 789">+48 123 456 789</a></div>
+                  <div class="element flex space-x-1"><img src="/assets/images/icons/Location.svg" alt=""><a
+                     href="mailto:kontakt@firma.com">kontakt@firma.com</a></div>
+               </div>
             </div>
             <div class="col-span-full | md:col-start-10 md:col-span-3">
-                <div class="text-h5 mb-[30px]">
-                    <p>Znajdź Nas
-                        <br>na social media
-                    </p>
-                </div>
-                <div class="flex space-x-5">
-                    <div class="block"><a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/facebook.svg" alt=""></a></div>
-                    <div class="block"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/linkedin.svg" alt=""></a></div>
-                    <div class="block"><a href="https://twitter.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/twitter.svg" alt=""></a></div>
-                </div>
+               <div class="text-h5 mb-[30px]">
+                  <p>Znajdź Nas
+                     <br>na social media
+                  </p>
+               </div>
+               <div class="flex space-x-5">
+                  <div class="block"><a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/facebook.svg" alt=""></a></div>
+                  <div class="block"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/linkedin.svg" alt=""></a></div>
+                  <div class="block"><a href="https://twitter.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/twitter.svg" alt=""></a></div>
+               </div>
             </div>
-        </div>
-    </div>
-</footer>
-
+         </div>
+      </div>
+   </footer>
 </html>

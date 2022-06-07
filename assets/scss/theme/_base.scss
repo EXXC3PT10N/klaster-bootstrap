@@ -26,4 +26,10 @@ html {
         content: "";
         @apply bg-green w-[21px] h-0.5 absolute -bottom-[0.5px] rounded-[1px] z-10;
     }
+    &--dark {
+        &::after {
+            content: "";
+            @apply bg-blue-dark w-[270px] h-px relative block mt-[5px];
+        }
+    }
 }

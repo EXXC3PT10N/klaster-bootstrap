@@ -50,7 +50,7 @@ jQuery(function ($) {
     //Alpine.start()
 
     // Async Functions
-    //fCarousels.init()
+    fCarousels.init()
     //ffScroll.init()
     //fGSAPController.init()
 })
