@@ -1174,6 +1174,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-2{
   margin-top: 0.5rem;
 }
+
 .mb-7{
   margin-bottom: 1.75rem;
 }
@@ -1602,10 +1603,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
+
 .py-\[10px\]{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1836,15 +1834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.duration-500{
-  transition-duration: 500ms;
-}
-.duration-75{
-  transition-duration: 75ms;
-}
-.ease-in-out{
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -1957,20 +1946,7 @@ html{
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(48 43 63 / var(--tw-text-opacity));
-}
-@media (min-width: 992px){
-  .datepicker .datepicker-cell{
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-}
-@media (min-width: 1366px){
-  .datepicker .datepicker-cell{
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-.datepicker .datepicker-cell {
+
   border: 1px solid #DFDFDF;
 }
 .datepicker .datepicker-cell:not(:last-of-type) {
@@ -1992,22 +1968,7 @@ html{
 .datepicker .text-sm{
   font-size: 12px;
   line-height: 14px;
-}
-.datepicker-picker{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 992px){
-  .datepicker-picker{
-    display: inline-block;
-  }
-}
-.datepicker-header{
-  width: 100%;
-  max-width: 308px;
-}
+
 
 .text-h1{
   font-size: 68px;
@@ -2688,7 +2649,6 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 
-@media (min-width: 992px){
   .lg\:col-span-4{
     grid-column: span 4 / span 4;
   }
