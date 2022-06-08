@@ -40,6 +40,7 @@ module.exports = {
         grey: {
           DEFAULT: "#D6D6D6",
           light: "rgba(217, 217, 217, 0.2)",
+          medium: "#8A92A6",
           dark: "#656565",
           '100': "#EFEFEF",
           '200': "#DFDFDF",
