@@ -43,6 +43,7 @@ module.exports = {
           dark: "#656565",
           '100': "#EFEFEF",
           '200': "#DFDFDF",
+          '300': "#C4C4C4"
         },
         blue: {
           DEFAULT: "#08AEEA",
@@ -50,6 +51,7 @@ module.exports = {
         },
         green: {
           DEFAULT: '#23C878',
+          light: "rgba(35, 200, 120, 0.5);"
         },
         yellow: {
           DEFAULT: '#EBB51E',

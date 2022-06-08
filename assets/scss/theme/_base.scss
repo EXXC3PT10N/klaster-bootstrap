@@ -8,28 +8,109 @@ html {
     @apply font-fira-sans;
     @apply text-blue-dark;
 }
+
 .grid-custom {
     &__gapped {
         @apply gap-[30px];
     }
+
+    &__gapped-large {
+        @apply gap-[60px];
+    }
+
     @apply grid grid-cols-12;
 }
 
 .underline-custom {
     @apply relative;
+
     &::after {
         content: "";
         @apply bg-grey w-full h-px relative block mt-[5px];
     }
+
     &::before {
 
         content: "";
         @apply bg-green w-[21px] h-0.5 absolute -bottom-[0.5px] rounded-[1px] z-10;
     }
+
     &--dark {
         &::after {
             content: "";
             @apply bg-blue-dark w-[270px] h-px relative block mt-[5px];
         }
     }
+}
+
+.datepicker {
+    &-main {
+        @apply p-0;
+    }
+    &-grid {
+        @apply w-full;
+    }
+    .dark\:text-white {
+        @apply text-black;
+    }
+
+    span {
+        @apply text-black;
+    }
+
+    .datepicker-controls {
+        @apply flex mb-4 p-0;
+        @apply mt-5;
+        button {
+            @apply p-0 justify-start;
+        }
+
+        button:nth-of-type(2) {
+            @apply -order-1 w-full text-left;
+            @apply text-[18px] leading-[22px] font-bold;
+            
+        }
+
+        button:nth-of-type(1) {
+            @apply mr-5;
+            
+            
+        }
+
+       
+    }
+
+    .days-of-week {
+        span {
+            @apply text-[12px] leading-[24px] font-semibold;
+
+        }
+    }
+
+    .datepicker-cell {
+        @apply font-normal text-blue-dark w-11 h-11 flex items-center justify-center;
+        border: 1px solid #DFDFDF;
+
+        &:not(:last-of-type) {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        &:not(:first-of-type) {
+            margin-left: -1px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        
+        &.selected {
+            @apply bg-blue text-white font-semibold;
+        }
+
+
+    }
+
+    .text-sm {
+        @apply text-[12px] leading-[14px];
+    }
+
 }
