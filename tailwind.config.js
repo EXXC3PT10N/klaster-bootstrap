@@ -44,7 +44,8 @@ module.exports = {
           dark: "#656565",
           '100': "#EFEFEF",
           '200': "#DFDFDF",
-          '300': "#C4C4C4"
+          '300': "#C4C4C4",
+          '400': "#EEEEEE"
         },
         blue: {
           DEFAULT: "#08AEEA",

@@ -20,12 +20,7 @@
 }
 .all-firmy {
     background-image: url("/assets/images/backgrounds/firmy-backgorund.png");
-    // @apply bg-white bg-no-repeat bg-cover bg-left;
-
-    &--oferta {
-        background-image: url("/assets/images/backgrounds/oferta-background.png");
-        @apply bg-white bg-no-repeat  bg-right-bottom;
-    }
+    @apply bg-white bg-no-repeat bg-cover bg-left;
 }
 .datepicker {
     &-picker {
