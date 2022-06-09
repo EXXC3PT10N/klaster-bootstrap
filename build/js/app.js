@@ -22371,7 +22371,9 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "jquery"); // LazyL
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_3__["default"]; // Theme Functions
 //const fSmoothScroll = require('./utils/smooth-scroll')
 
-var fCarousels = __webpack_require__(/*! ./components/carousels */ "./assets/js/components/carousels.js"); //const fScroll = require('./utils/scroll')
+var fCarousels = __webpack_require__(/*! ./components/carousels */ "./assets/js/components/carousels.js");
+
+var fMenuButton = __webpack_require__(/*! ./components/menu-button */ "./assets/js/components/menu-button.js"); //const fScroll = require('./utils/scroll')
 //const fGSAPController = require('./components/gsap-controller')
 //const fAccordion = require('./components/accordion')
 // Vue Support Function
@@ -22397,9 +22399,10 @@ jQuery(function ($) {
   //fSmoothScroll()
   //InitVueComponents()
   //fAccordion()
-  // plugins
+  fMenuButton(); // plugins
   //Alpine.start()
   // Async Functions
+
   fCarousels.init(); //ffScroll.init()
   //fGSAPController.init()
 });
@@ -22475,6 +22478,38 @@ var sliders = /*#__PURE__*/function () {
 }();
 
 var init = sliders;
+
+/***/ }),
+
+/***/ "./assets/js/components/menu-button.js":
+/*!*********************************************!*\
+  !*** ./assets/js/components/menu-button.js ***!
+  \*********************************************/
+/***/ ((module) => {
+
+module.exports = function () {
+  var mobileMenuOpen = function mobileMenuOpen() {
+    var hamburger = $('.js-hamburger');
+    var headerMenu = $('.header-menu');
+    $(hamburger).on('click', function () {
+      $(this).toggleClass('open');
+
+      if (headerMenu.hasClass('hiding')) {
+        $(headerMenu).removeClass('hiding').addClass('open');
+      } else {
+        $(headerMenu).removeClass('open').addClass('hiding');
+      }
+    });
+    $('.header-menu>li>a').on('click', function () {
+      $('.header-menu').removeClass('open').addClass('hiding');
+      $(hamburger).removeClass('open');
+    });
+  };
+
+  $(document).ready(function () {
+    mobileMenuOpen();
+  });
+};
 
 /***/ }),
 

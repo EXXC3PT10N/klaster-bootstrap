@@ -14,30 +14,43 @@
          rel="stylesheet" />
    </head>
    <body class="home ">
-      <header class="flex flex-wrap items-center px-5 py-[30px] bg-blue-dark text-white">
-         <div class="mr-7 shrink-0 flex items-center space-x-[10px]"><a class="flex items-center space-x-[10px]">
-            <a href="/"><img src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
-            <a href=""><img src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
+      <header class="flex flex-wrap items-center px-2.5 lg:px-5 py-[30px] bg-blue-dark text-white">
+         <div class="2xl:mr-7 mr-auto shrink-0 flex items-center lg:space-x-[10px] space-x-1.5">
+            <a href="/"><img class="lg:w-auto w-[150px]" src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
+            <a href=""><img class="lg:w-auto w-[130px]" src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
          </div>
-         <ul class="header-menu flex mr-10 grow">
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/wiadomosci.html">Wiadomości</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/o-klastrze.html">O klastrze</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/oferta-klastra.html">Oferta
+         <div class="buttons flex 2xl:order-2">
+            <a class="btn btn-primary btn-navbar mr-[55px] 2xl:mr-0 hidden lg:flex" href="/">strefa klastra</a>
+            <button class="js-hamburger text-black w-[45px] h-[45px] relative focus:outline-none block | 2xl:hidden">
+               <div class="block w-[33px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                   <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
+                   <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
+                   <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
+               </div>
+            </button>
+         </div>
+         <ul class="header-menu 2xl:mr-10 grow w-full text-right 2xl:text-center 2xl:flex 2xl:w-auto md:order-1 hiding">
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/wiadomosci.html">Wiadomości</a></li>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/o-klastrze.html">O klastrze</a></li>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/oferta-klastra.html">Oferta
                Klastra</a>
             </li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/gielda-uslug.html">Giełda Usług</a>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/gielda-uslug.html">Giełda Usług</a>
             </li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/showroom.html">Showroom</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px] active" href="/templates/projekty.html">Projekty</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/akademia-recyklingu.html">Akademia
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/showroom.html">Showroom</a></li>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px] active" href="/templates/projekty.html">Projekty</a></li>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/akademia-recyklingu.html">Akademia
                Recyklingu</a>
             </li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/baza-wiedzy.html">Baza wiedzy</a>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/baza-wiedzy.html">Baza wiedzy</a>
             </li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/kontakt.html">Kontakt</a></li>
-            <li class="text-[18px] leading-6"><a class="p-[10px]" href="/templates/english.html">English</a></li>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/kontakt.html">Kontakt</a></li>
+            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/english.html">English</a></li>
+            <li class="flex justify-end mt-[30px]"><a class="lg:hidden btn btn-primary btn-navbar" href="/">strefa klastra</a></li>
          </ul>
-         <a class="btn btn-primary btn-navbar" href="/">strefa klastra</a>
+
+         
+         
       </header>
       <!-- index start -->
       <!-- hero -->
@@ -73,7 +86,7 @@
       <section class="main-index pt-[60px] pb-[100px]">
          <div class="container relative">
             <div class="grid-custom grid-custom__gapped-large">
-               <div class="col-span-full lg:col-span-4 mr-[45px]">
+               <div class="col-span-full lg:col-span-4 xl:mr-[45px]">
                   <div class="text-h2 underline-custom">
                      <h2><span class="text-green">W</span>ydarzenia</h2>
                   </div>
@@ -430,10 +443,10 @@
                      <p>Rhoncus diam nullam hac nullam tempus amet bibendum. Et et dui quis vitae semper netus eget dui. Non pretium ullamcorper amet proin vitae etiam eu id facilisi. Netus lorem fames est, ultrices. Elementum sed morbi tempus purus velit maecenas. Lobortis fermentum, urna, sed ultrices nisi, id adipiscing a vitae. Iaculis sapien aenean tortor id.</p>
                   </div>
                   <div class="grid grid-cols-7 gap-x-[30px] mt-[30px]">
-                     <div class="col-span-5">
+                     <div class="col-span-full lg:col-span-4 xl:col-span-5">
                         <input type="text" id="company" class="rounded-sm block w-full py-3 pl-2.5" placeholder="Podaj swój email" required>
                      </div>
-                     <div class="col-span-2">
+                     <div class="col-span-full lg:col-span-3 xl:col-span-2 flex justify-center mt-5 lg:mt-0 | lg:inline">
                         <button href="" class="btn btn-primary btn-navbar">ZAPISZ MNIE</button>
                      </div>
                   </div>
@@ -445,10 +458,10 @@
       <!-- fundusz start -->
       <div class="relative bg-white py-[30px]">
          <div class="container">
-            <div class="w-full hidden md:flex">
+            <div class="w-full hidden sm:flex">
                <img src="/assets/images/fundusz-desktop.png" alt="">
             </div>
-            <div class="w-full flex flex-col md:hidden">
+            <div class="w-full flex flex-col sm:hidden">
                <img src="/assets/images/fundusz.png" alt="">
                <img src="/assets/images/polska_edited.jpg" alt="">
                <img src="/assets/images/unia.png" alt="">

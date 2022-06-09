@@ -13,6 +13,7 @@ window.Alpine = Alpine
 // Theme Functions
 //const fSmoothScroll = require('./utils/smooth-scroll')
 const fCarousels = require('./components/carousels')
+const fMenuButton = require('./components/menu-button')
 //const fScroll = require('./utils/scroll')
 //const fGSAPController = require('./components/gsap-controller')
 //const fAccordion = require('./components/accordion')
@@ -45,12 +46,13 @@ jQuery(function ($) {
     //fSmoothScroll()
     //InitVueComponents()
     //fAccordion()
-    
+    fMenuButton()
     // plugins
     //Alpine.start()
 
     // Async Functions
     fCarousels.init()
+    
     //ffScroll.init()
     //fGSAPController.init()
 })

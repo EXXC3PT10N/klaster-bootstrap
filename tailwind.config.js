@@ -83,7 +83,7 @@ module.exports = {
       screens: {
         'sm': '640px',
         'md': '768px',
-        'lg': '1024px',
+        'lg': '992px',
         'xl': '1366px',
         '2xl': '1920px',
       },
@@ -101,11 +101,14 @@ module.exports = {
             marginRight: 'auto',
             paddingLeft: '15px',
             paddingRight: '15px',
+            '@screen sm': {
+              maxWidth: '570px'
+            },
             '@screen md': {
-              maxWidth: '752px',
+              maxWidth: '740px',
             },
             '@screen lg': {
-              maxWidth: '950px',
+              maxWidth: '980px',
             },
             '@screen xl': {
               maxWidth: '1200px',
