@@ -26,7 +26,7 @@ html {
 
     &::after {
         content: "";
-        @apply bg-grey w-full h-px relative block mt-[5px];
+        @apply bg-grey w-full h-px relative block mt-[9px];
     }
 
     &::before {
@@ -119,4 +119,16 @@ html {
         @apply max-w-[308px] w-full;
     }
 
+}
+
+.list-before {
+    li {
+        @apply relative;
+        @apply flex items-center;
+        &:before {
+            content: "";
+            @apply bg-blue-dark w-1 h-1 rounded-full relative inline mx-2.5 shrink-0;
+        }
+    }
+   
 }

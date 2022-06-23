@@ -9,7 +9,8 @@ header {
         }
 
             @apply max-h-0;
-            @apply overflow-hidden;
+            @apply xl-max:overflow-hidden;
+
             @apply 2xl:max-h-full;
             &.open {
                 @apply py-10;

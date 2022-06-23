@@ -4,11 +4,11 @@
 }
 .text-h2 {
     //38/44
-    @apply text-[42px] leading-[58px] font-bold text-blue-dark;
+    @apply text-[42px] leading-[58px] font-bold;
 }
 .text-h3 {
     //38/44
-    @apply text-[38px] leading-[44px] font-medium text-blue-dark;
+    @apply text-[38px] leading-[44px] font-medium;
 }
 .text-h5 {
     //21/26 
@@ -18,7 +18,10 @@
     //28/34
     @apply text-[28px] leading-[34px] font-medium;
 }
-
+.text-30 {
+    //30/34
+    @apply text-[30px] leading-10 font-medium;
+}
 .sidebar--heading {
     //28/34
     @apply text-[18px] leading-[34px] font-medium;

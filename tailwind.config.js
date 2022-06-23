@@ -6,8 +6,11 @@ module.exports = {
       purgeLayersByDefault: true,
     },
     content: [
-      "index.html",
-      './templates/**/*.html',
+      "./src/index.html",
+      "./src/**/*.html",
+      "./src/layouts/**/*.html",
+      "./src/partials/**/*.html",
+      
       './node_modules/flowbite/**/*.js',
     ],
     corePlugins: {
@@ -24,6 +27,7 @@ module.exports = {
     },
     theme: {
       borderRadius: {
+        full: '9999px',
         DEFAULT: '0.625rem',
         sm: '5px',
         none: '0px',
@@ -85,6 +89,7 @@ module.exports = {
         'md': '768px',
         'lg': '992px',
         'xl': '1366px',
+        'xl-max': {'max': '1919px'},
         '2xl': '1920px',
       },
     },

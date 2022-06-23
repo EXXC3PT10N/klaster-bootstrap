@@ -1,57 +1,7 @@
-<!doctype html>
-<html lang="en" class="no-js">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport"
-         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Klaster</title>
-      <link rel="icon" type="image/x-icon" href="/assets/images/icons/main-logo.svg">
-      <link rel='stylesheet' id='app-css' href='/build/css/app.css' type='text/css' media='all' />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
-         rel="stylesheet" />
-   </head>
-   <body class="home ">
-      <header class="flex flex-wrap items-center px-2.5 lg:px-5 py-[30px] bg-blue-dark text-white">
-         <div class="2xl:mr-7 mr-auto shrink-0 flex items-center lg:space-x-[10px] space-x-1.5">
-            <a href="/"><img class="lg:w-auto w-[150px]" src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
-            <a href=""><img class="lg:w-auto w-[130px]" src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
-         </div>
-         <div class="buttons flex 2xl:order-2">
-            <a class="btn btn-primary btn-navbar mr-[55px] 2xl:mr-0 hidden lg:flex" href="/">strefa klastra</a>
-            <button class="js-hamburger text-black w-[45px] h-[45px] relative focus:outline-none block | 2xl:hidden">
-               <div class="block w-[33px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                   <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
-                   <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
-                   <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
-               </div>
-            </button>
-         </div>
-         <ul class="header-menu 2xl:mr-10 grow w-full text-right 2xl:text-center 2xl:flex 2xl:w-auto md:order-1 hiding">
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/wiadomosci.html">Wiadomości</a></li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/o-klastrze.html">O klastrze</a></li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/oferta-klastra.html">Oferta
-               Klastra</a>
-            </li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/gielda-uslug.html">Giełda Usług</a>
-            </li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/showroom.html">Showroom</a></li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px] active" href="/templates/projekty.html">Projekty</a></li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/akademia-recyklingu.html">Akademia
-               Recyklingu</a>
-            </li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/baza-wiedzy.html">Baza wiedzy</a>
-            </li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/kontakt.html">Kontakt</a></li>
-            <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/templates/english.html">English</a></li>
-            <li class="flex justify-end mt-[30px]"><a class="lg:hidden btn btn-primary btn-navbar" href="/">strefa klastra</a></li>
-         </ul>
 
-         
-         
-      </header>
+<include src="../layouts/open.html"></include>
+      <include src="../layouts/header.html"></include>
+      
       <!-- index start -->
       <!-- hero -->
       <div class="hero relative h-[650px] flex items-end pb-[128px]">
@@ -123,7 +73,7 @@
                     </svg></a></div>
                   </div>
                   <a href="">
-                     <img class="rounded-sm" src="/assets/images/post-image.png" alt="">
+                     <img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt="">
                   </a>
                   <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
                      <li><a href="">Kategoria</a></li>
@@ -158,7 +108,7 @@
                     </svg></a></div>
                   </div>
                   <a href="">
-                     <img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt="">
+                     <img class="rounded-sm" src="/assets/images/home/baza-wiedzy.png" alt="">
                   </a>
                   <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
                      <li><a href="">Kategoria</a></li>
@@ -171,10 +121,11 @@
          </div>
       </section>
       <!-- end header -->
-      <section class="o-klastrze pt-[60px] pb-[45px]">
+      <section class="o-klastrze pt-[60px] pb-[45px] relative">
+         <img class="absolute left-0 hidden 2xl:block top-0 object-right" src="/assets/images/backgrounds/home-oklastrze.png" alt="">
          <div class="container relative">
-            <div class="grid grid-cols-12 gap-[30px] w-[calc(100%+30px)]">
-               <div class="-ml-[30px] col-span-10 col-start-3">
+            <div class="grid grid-cols-12 gap-[30px] 2xl:w-[calc(100%+30px)]">
+               <div class="2xl:-ml-[30px] col-span-full 2xl:col-span-10 2xl:col-start-3">
                   <div class="text-h2 relative flex mb-[45px]">
                      <div class="underline-custom w-[350px] ">
                         <h2>O <span class="text-green">Klastrze</span></h2>
@@ -470,53 +421,5 @@
       </div>
       <!-- fundusz end -->
       <!-- index end -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script type='text/javascript' src='/build/js/app.js' id='app-js'></script>
-      <script type='text/javascript' src='/assets/js/utils/datepicker.js' ></script>
-   </body>
-   <footer class="bg-blue-dark text-white pt-[72px] pb-[120px]">
-      <div class="container">
-         <div class="grid-custom grid-custom__gapped">
-            <div class="col-span-full md:col-span-5 flex">
-               <div class="shrink-0"><a href="/"><img src="/assets/images/icons/main-logo.svg" alt=""></a></div>
-               <div class="ml-10 text">
-                  <div class="text-h5">
-                     <p>O firmie</p>
-                  </div>
-                  <div class="text-base">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet dui quis risus
-                        semper, vulputate rutrum quam molestie. 
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-span-full md:col-span-3">
-               <div class="text-h5">
-                  <p>Kontakt</p>
-               </div>
-               <div class="text-base">
-                  <div class="element flex space-x-1"><img src="/assets/images/icons/Phone.svg" alt=""><a href="">ul. Wybrana 3/5,
-                     00-000 Miasto</a>
-                  </div>
-                  <div class="element flex space-x-1"><img src="/assets/images/icons/Email.svg" alt=""><a
-                     href="tel:+48 123 456 789">+48 123 456 789</a></div>
-                  <div class="element flex space-x-1"><img src="/assets/images/icons/Location.svg" alt=""><a
-                     href="mailto:kontakt@firma.com">kontakt@firma.com</a></div>
-               </div>
-            </div>
-            <div class="col-span-full | md:col-start-10 md:col-span-3">
-               <div class="text-h5 mb-[30px]">
-                  <p>Znajdź Nas
-                     <br>na social media
-                  </p>
-               </div>
-               <div class="flex space-x-5">
-                  <div class="block"><a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/facebook.svg" alt=""></a></div>
-                  <div class="block"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/linkedin.svg" alt=""></a></div>
-                  <div class="block"><a href="https://twitter.com/" target="_blank" rel="noreferrer"><img src="/assets/images/icons/twitter.svg" alt=""></a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
-</html>
+<include src="../layouts/close.html"></include>
+<include src="../layouts/footer.html"></include>

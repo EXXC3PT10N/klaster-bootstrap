@@ -15,8 +15,11 @@
     }
 }
 .o-klastrze {
-    background-image: url("/assets/images/backgrounds/oklastrze-background.png");
-    @apply bg-no-repeat bg-cover bg-right;
+    background: rgba(17, 177, 104, 0.1);
+}
+.struktura {
+    background-image: url("/assets/images/o-klastrze/o-klastrze-grupy.png");
+    @apply bg-no-repeat bg-cover bg-left;
 }
 .all-firmy {
     background-image: url("/assets/images/backgrounds/firmy-backgorund.png");
@@ -26,4 +29,8 @@
     &-picker {
         @apply p-0;
     }
+}
+.zakres-dzialan {
+    background-image: url("/assets/images/koordynator/drzewo-bg.png");
+    @apply bg-no-repeat bg-cover bg-left;
 }

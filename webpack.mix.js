@@ -14,7 +14,17 @@ mix.webpackConfig({
         publicPath: '/build/',
     },
 });
+require('mix-html-builder');
 
+mix.html({
+    htmlRoot: './src/**.html',
+    output: 'dist',
+    partialRoot: './src/partials',  
+    layoutRoot: './src/layouts', 
+    minify: {
+        removeComments: true
+    }
+});
 module.exports = {
     resolve: {
         alias: {

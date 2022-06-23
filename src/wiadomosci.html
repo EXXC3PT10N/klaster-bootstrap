@@ -1,0 +1,218 @@
+
+<include src="../layouts/open.html"></include>
+    <include src="../layouts/header.html"></include>
+    <!-- hero -->
+    <div class="relative h-[300px] flex items-end pb-[30px]">
+        <div class="text-h1 z-50 relative container">
+            <h1>Wiadomosci</h1>
+        </div>
+        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center" src="/assets/images/hero/wiadomosci-header.jpg" alt="">
+    </div>
+    <!-- end hero -->
+    <section class="header mb-[20px]">
+        <div class="container">
+            <div class="flex justify-between pt-5">
+                <div class="text-breadcrumbs p-2.5 mb-2.5">
+                    <ul class="flex flex-wrap w-full">
+                        <li><a href="/">Klaster</a></li>
+                        <li><a class="disabledd active" href="">Wiadomosci</a></li>
+                    </ul>
+                </div>
+                <form>
+                    <div class="search relative"><input type="search" id="default-search" class="outline-none "
+                            placeholder="Znajdz wiadomość" required=""><button type="submit"><svg
+                                class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="#302B3F"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg></button></div>
+                </form>
+            </div>
+            <div class="grid-custom grid-custom__gapped pt-2.5">
+                <div class="col-span-full lg:col-span-8">
+                    <div class="flex items-center">
+                        <div class="w-full">
+                            <div class="text-h2">
+                                <h2 class="underline-custom inline-block">Najnowsze wiadomości</h2>
+                            </div>
+                        </div>
+                        <div class="arrows flex space-x-5"><a class="previous group cursor-pointer"><svg class=""
+                                    width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="group-hover:stroke-green transition group-hover:opacity-100"
+                                        opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                                    </circle>
+                                    <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                                        d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                                        fill="#282828"></path>
+                                </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
+                                    width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="transition group-hover:stroke-green group-hover:opacity-100"
+                                        opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                                    </circle>
+                                    <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                                        d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                                        fill="#282828"></path>
+                                </svg></a></div>
+                    </div>
+                    <div class="grid grid-cols-8 gap-x-[30px] mt-[50px]">
+                        <div class="col-span-full lg:col-span-4">
+                            <a href=""><img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt=""></a>
+                        </div>
+
+                        <div class="col-span-full lg:col-span-4 flex flex-col">
+                            <ul class="filters text-single--filters flex flex-wrap">
+                                <li><a href="">Kategoria</a></li>
+                            </ul>
+                            <div class="text-h3 mt-4 mb-2.5">
+                                <h3>Lorem ipsum dolor sit consectetur</h3>
+                            </div>
+                            <div class="text-base mb-[30px]">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna magna gravida mauris
+                                    arcu potenti purus purus duis vel.</p>
+                            </div>
+                            <a href=""
+                                class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">Dowiedz
+                                się więcej <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-full lg:col-span-4 shadow-sm mt-[50px] py-2.5 px-5 rounded">
+                    <div class="text-h3 mb-[30px]">
+                        <h3>Wyróżnione</h3>
+                    </div>
+                    <div class="flex space-x-[30px] cursor-pointer mb-5">
+                        <div class="flex shrink-0 img w-[100px] h-20 relative">
+                            <img class="rounded-sm" src="/assets/images/featured-post.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="text-single--filters mb-2">
+                                <ul class="flex flex-wrap w-full">
+                                    <li><a class="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                                    <li><a class="transition-[color] hover:text-green" href="">Kiedy dodany</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-h4 title w-11/12">
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-[30px] cursor-pointer mb-5">
+                        <div class="flex shrink-0 img w-[100px] h-20 relative">
+                            <img class="rounded-sm" src="/assets/images/featured-post.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="text-single--filters mb-2">
+                                <ul class="flex flex-wrap w-full">
+                                    <li><a class="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                                    <li><a class="transition-[color] hover:text-green" href="">Kiedy dodany</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-h4 title w-11/12">
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-[30px] cursor-pointer">
+                        <div class="flex shrink-0 img w-[100px] h-20 relative">
+                            <img class="rounded-sm" src="/assets/images/featured-post.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="text-single--filters mb-2">
+                                <ul class="flex flex-wrap w-full">
+                                    <li><a class="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                                    <li><a class="transition-[color] hover:text-green" href="">Kiedy dodany</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-h4 title w-11/12">
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="posts bg-grey-light pb-[36px]">
+        <div class="container">
+            <div class="posts-filters text-filters flex justify-between py-[50px]">
+                <ul class="hidden lg:flex flex-wrap categories">
+                    <li class="px-5 first:pl-0 last:pr-0"><a href="" class="active">Wszystkie</a></li>
+                    <li class="px-5 first:pl-0 last:pr-0"><a href="" class="">Kategoria 2</a></li>
+                    <li class="px-5 first:pl-0 last:pr-0"><a href="" class="">Kategoria 3</a></li>
+                    <li class="px-5 first:pl-0 last:pr-0"><a href="" class="">Kategoria 4</a></li>
+                    <li class="px-5 first:pl-0 last:pr-0"><a href="" class="">Kategoria 5</a></li>
+                </ul>
+                <div class="lg:hidden sorting-posts text-base leading-[34px] flex"><span class="font-light">Filtruj:</span>
+                    <label id="dropdownDefaultFilters" data-dropdown-toggle="dropdown"
+                            class="pl-2 btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Wszystkie
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="#302B3F"></path>
+                        </svg>
+                    </label>
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                        <ul aria-labelledby="dropdownDefaultFilters" class="dropdown-content menu menu-normal p-2 shadow-sm bg-white rounded w-52">
+                            <li><a>Wszystkie</a></li>
+                            <li><a>Kategoria 1</a></li>
+                            <li><a>Kategoria 2</a></li>
+                            <li><a>Kategoria 3</a></li>
+                            <li><a>Kategoria 4</a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="sorting-posts text-base leading-[34px] flex"><span class="font-light">Sortuj wg:</span>
+                    <label id="dropdownDefault" data-dropdown-toggle="dropdown-sortowanie"
+                            class="pl-2 btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Najnowsze
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="#302B3F"></path>
+                        </svg>
+                    </label>
+                    <div id="dropdown-sortowanie" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                        <ul aria-labelledby="dropdownDefault" class="dropdown-content menu menu-normal p-2 shadow-sm bg-white rounded w-52">
+                            <li><a href="">Najnowsze</a></li>
+                            <li><a href="">Najstarsze</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+            <div class="posts-main grid-custom grid-custom__gapped mb-[55px]">
+                <div class="col-span-full lg:col-span-4">
+                    <div class="flex flex-col"><a href=""><img class="rounded-sm" src="/assets/images/post-image.png"
+                                alt=""></a>
+                        <ul class="filters text-single--filters flex flex-wrap pt-5">
+                            <li><a href="">Kategoria</a></li>
+                        </ul>
+                        <div class="text-h3 pt-4"><a href="">
+                                <h3>Lorem ipsum dolor sit consectetur</h3>
+                            </a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pagination flex justify-center">
+                <div class="btn-group"><button class="btn btn-primary">&lt;</button><button
+                        class="btn btn-primary">1</button><button
+                        class="btn btn-primary btn-active disabled">2</button><button
+                        class="btn btn-primary">3</button><button class="btn btn-primary">4</button><button
+                        class="btn btn-primary">5</button><button class="btn btn-primary">&gt;</button></div>
+            </div>
+        </div>
+    </section>
+    
+    <include src="../layouts/close.html"></include>
+    <include src="../layouts/footer.html"></include>
