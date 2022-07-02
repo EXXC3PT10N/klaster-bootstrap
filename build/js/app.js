@@ -22430,22 +22430,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var sliders = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var HeroSlider, SwiperLib, Swiper, HeroSliderSwiper;
+    var HeroSlider, carouselTestimonials, wiadomosciHome, bazaHome, bazawiedzyPage, SwiperLib, Swiper, HeroSliderSwiper;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            HeroSlider = document.querySelectorAll('.hero-slider') !== null; // Execute code if You really need it
+            HeroSlider = document.querySelectorAll('.hero-slider') !== null;
+            carouselTestimonials = document.querySelectorAll('.carousel-testimonials') !== null;
+            wiadomosciHome = document.querySelectorAll('.wiadomosci-home') !== null;
+            bazaHome = document.querySelectorAll('.baza-home') !== null;
+            bazawiedzyPage = document.querySelectorAll('.baza-wiedzy-slider') !== null; // Execute code if You really need it
 
-            if (!HeroSlider) {
-              _context.next = 7;
+            if (!(HeroSlider || carouselTestimonials || wiadomosciHome || bazaHome || bazawiedzyPage)) {
+              _context.next = 15;
               break;
             }
 
-            _context.next = 4;
+            _context.next = 8;
             return __webpack_require__.e(/*! import() */ "node_modules_swiper_swiper-bundle_esm_js").then(__webpack_require__.bind(__webpack_require__, /*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js"));
 
-          case 4:
+          case 8:
             SwiperLib = _context.sent;
             Swiper = SwiperLib["default"];
 
@@ -22464,7 +22468,124 @@ var sliders = /*#__PURE__*/function () {
               });
             }
 
-          case 7:
+            if (carouselTestimonials) {
+              document.querySelectorAll('.carousel-testimonials').forEach(function (el) {
+                var carouselTestimonialSwiper = new Swiper(el, {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  loop: true,
+                  pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true
+                  },
+                  breakpoints: {
+                    0: {
+                      slidesPerView: 1
+                    },
+                    768: {
+                      slidesPerView: 2
+                    },
+                    1366: {
+                      slidesPerView: 3
+                    }
+                  }
+                });
+                var prevBtn = document.querySelector('.carousel-testimonials__nav__prev'),
+                    nextBtn = document.querySelector('.carousel-testimonials__nav__next');
+
+                if (prevBtn != null) {
+                  prevBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slidePrev();
+                  }, false);
+                }
+
+                if (nextBtn != null) {
+                  nextBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slideNext();
+                  }, false);
+                }
+              });
+            }
+
+            if (bazawiedzyPage) {
+              document.querySelectorAll('.baza-wiedzy-slider').forEach(function (el) {
+                var carouselTestimonialSwiper = new Swiper(el, {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  loop: true,
+                  breakpoints: {
+                    992: {
+                      slidesPerView: 2
+                    }
+                  }
+                });
+                var prevBtn = document.querySelector('.baza-wiedzy__nav__prev'),
+                    nextBtn = document.querySelector('.baza-wiedzy__nav__next');
+
+                if (prevBtn != null) {
+                  prevBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slidePrev();
+                  }, false);
+                }
+
+                if (nextBtn != null) {
+                  nextBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slideNext();
+                  }, false);
+                }
+              });
+            }
+
+            if (wiadomosciHome) {
+              document.querySelectorAll('.wiadomosci-home').forEach(function (el) {
+                var carouselTestimonialSwiper = new Swiper(el, {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  loop: false
+                });
+                var prevBtn = document.querySelector('.wiadomosci-home__nav__prev'),
+                    nextBtn = document.querySelector('.wiadomosci-home__nav__next');
+
+                if (prevBtn != null) {
+                  prevBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slidePrev();
+                  }, false);
+                }
+
+                if (nextBtn != null) {
+                  nextBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slideNext();
+                  }, false);
+                }
+              });
+            }
+
+            if (bazaHome) {
+              document.querySelectorAll('.baza-home').forEach(function (el) {
+                var carouselTestimonialSwiper = new Swiper(el, {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  loop: false
+                });
+                var prevBtn = document.querySelector('.baza__nav__prev'),
+                    nextBtn = document.querySelector('.baza__nav__next');
+
+                if (prevBtn != null) {
+                  prevBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slidePrev();
+                  }, false);
+                }
+
+                if (nextBtn != null) {
+                  nextBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slideNext();
+                  }, false);
+                }
+              });
+            }
+
+          case 15:
           case "end":
             return _context.stop();
         }

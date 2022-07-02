@@ -13,18 +13,6 @@ module.exports = {
       
       './node_modules/flowbite/**/*.js',
     ],
-    corePlugins: {
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem',
-        },
-      },
-    },
     theme: {
       borderRadius: {
         full: '9999px',
@@ -88,6 +76,7 @@ module.exports = {
         'sm': '640px',
         'md': '768px',
         'lg': '992px',
+        'lg-max': {'max': '992px'},
         'xl': '1366px',
         'xl-max': {'max': '1919px'},
         '2xl': '1920px',

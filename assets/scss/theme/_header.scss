@@ -1,4 +1,15 @@
+.anchors--sizes {
+    a {
+
+        @apply border-solid border-[1px] border-blue-dark;
+        @apply w-[25px] h-[25px] flex items-center justify-center;
+        @apply font-medium hover:text-green transition-[color]; 
+
+    }
+}
+
 header {
+
     @apply z-[99] relative;
     .header-menu {
         li {

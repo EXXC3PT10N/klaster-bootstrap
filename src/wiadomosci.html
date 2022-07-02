@@ -2,7 +2,7 @@
 <include src="../layouts/open.html"></include>
     <include src="../layouts/header.html"></include>
     <!-- hero -->
-    <div class="relative h-[300px] flex items-end pb-[30px]">
+    <div class="relative h-[250px] lg:h-[300px] flex items-end pb-[79px] lg:pb-[30px]">
         <div class="text-h1 z-50 relative container">
             <h1>Wiadomosci</h1>
         </div>
@@ -10,8 +10,8 @@
     </div>
     <!-- end hero -->
     <section class="header mb-[20px]">
-        <div class="container">
-            <div class="flex justify-between pt-5">
+        <div class="container lg-max:px-2.5">
+            <div class="flex justify-between lg:pt-5 flex-wrap">
                 <div class="text-breadcrumbs p-2.5 mb-2.5">
                     <ul class="flex flex-wrap w-full">
                         <li><a href="/">Klaster</a></li>
@@ -20,15 +20,13 @@
                 </div>
                 <form>
                     <div class="search relative"><input type="search" id="default-search" class="outline-none "
-                            placeholder="Znajdz wiadomość" required=""><button type="submit"><svg
-                                class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="#302B3F"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg></button></div>
+                            placeholder="Znajdz wiadomość" required=""><button type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#302B3F"/>
+                                </svg>
+                                </button></div>
                 </form>
             </div>
-            <div class="grid-custom grid-custom__gapped pt-2.5">
+            <div class="grid-custom grid-custom__gapped lg:pt-2.5 mt-[50px] lg:mt-0">
                 <div class="col-span-full lg:col-span-8">
                     <div class="flex items-center">
                         <div class="w-full">
@@ -164,7 +162,7 @@
                             <path d="M7 10L12 15L17 10H7Z" fill="#302B3F"></path>
                         </svg>
                     </label>
-                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-auto lg:w-44 dark:bg-gray-700">
                         <ul aria-labelledby="dropdownDefaultFilters" class="dropdown-content menu menu-normal p-2 shadow-sm bg-white rounded w-52">
                             <li><a>Wszystkie</a></li>
                             <li><a>Kategoria 1</a></li>
@@ -182,7 +180,7 @@
                             <path d="M7 10L12 15L17 10H7Z" fill="#302B3F"></path>
                         </svg>
                     </label>
-                    <div id="dropdown-sortowanie" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                    <div id="dropdown-sortowanie" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-auto lg:w-44 dark:bg-gray-700">
                         <ul aria-labelledby="dropdownDefault" class="dropdown-content menu menu-normal p-2 shadow-sm bg-white rounded w-52">
                             <li><a href="">Najnowsze</a></li>
                             <li><a href="">Najstarsze</a></li>

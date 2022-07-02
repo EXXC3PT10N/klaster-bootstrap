@@ -1,425 +1,529 @@
-
 <include src="../layouts/open.html"></include>
-      <include src="../layouts/header.html"></include>
-      
-      <!-- index start -->
-      <!-- hero -->
-      <div class="hero relative h-[650px] flex items-end pb-[128px]">
-         <div class="relative container z-10">
-            <div class="text-h1">
-               <h1>Lorem ipsum dolor <br/>sit amet consectetur</h1>
-            </div>
-            <div class="text-h5 text-white mt-2.5">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>Integer quam nibh eget nulla est interdum.
-            </div>
+<include src="../layouts/header.html"></include>
+<!-- index start -->
+<!-- hero -->
+<div class="hero relative h-[450px] lg:h-[650px] flex items-end pb-[82px] lg:pb-[128px] w-full">
+   <div class="relative container lg-max:px-2.5 z-10">
+      <div class="text-h1">
+         <h1>Lorem ipsum dolor <br />sit amet consectetur</h1>
+      </div>
+      <div class="text-h5 text-white mt-2.5">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Integer quam nibh eget nulla est interdum.
+      </div>
+   </div>
+   <div class="swiper-container hero-slider absolute top-0 h-full w-full overflow-hidden">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide relative">
+            <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+               src="/assets/images/hero/index-hero.png" alt="">
          </div>
-         <div class="swiper-container hero-slider absolute top-0 h-full w-full overflow-hidden">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide relative"> 
-                  <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
-                     src="/assets/images/hero/index-hero.png" alt="">
-               </div>
-               <div class="swiper-slide"> 
-                  <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
-                     src="/assets/images/hero/index-hero.png" alt="">
-               </div>
-               <div class="swiper-slide"> 
-                  <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
-                     src="/assets/images/hero/index-hero.png" alt="">
-               </div>
-            </div>
-            <div class="hero-slider__pagination flex justify-center"></div>
+         <div class="swiper-slide">
+            <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+               src="/assets/images/hero/index-hero.png" alt="">
+         </div>
+         <div class="swiper-slide">
+            <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+               src="/assets/images/hero/index-hero.png" alt="">
          </div>
       </div>
-      <!-- end hero -->
-      <!-- header -->
-      <section class="main-index pt-[60px] pb-[100px]">
-         <div class="container relative">
-            <div class="grid-custom grid-custom__gapped-large">
-               <div class="col-span-full lg:col-span-4 xl:mr-[45px]">
-                  <div class="text-h2 underline-custom">
-                     <h2><span class="text-green">W</span>ydarzenia</h2>
-                  </div>
-                  <div>
-                     <div inline-datepicker datepicker-format="dd/mm/yyyy" data-date="07/06/2022"></div>
-                  </div>
-                  <div class="flex items-center justify-center">
-                     <a href="" class="btn btn-primary btn-navbar">Przejdź do wydarzeń</a>
-                  </div>
+      <div class="hero-slider__pagination flex justify-center"></div>
+   </div>
+</div>
+<!-- end hero -->
+<!-- header -->
+<section class="main-index pt-5 pb-[70px] | lg:pt-[60px] lg:pb-[100px]">
+   <div class="container relative">
+      <div class="block lg:grid lg:grid-cols-12 grid-custom__gapped-large max-h-full relative overflow-hidden">
+         <div class="col-span-full lg:col-span-4 -order-1 lg:order-1 relative overflow-hidden mb-10 lg:mb-0">
+            <div class="flex flex-wrap items-center justify-between underline-custom mb-7">
+               <div class="text-h2">
+                  <h2><span class="text-green">W</span>iadomości</h2>
                </div>
-               <div class="col-span-full lg:col-span-4">
-                  <div class="flex flex-wrap items-center justify-between underline-custom mb-7">
-                     <div class="text-h2">
-                        <h2><span class="text-green">W</span>iadomości</h2>
-                     </div>
-                     <div class="arrows flex justify-center self-end mb-2 space-x-5"><a class="previous group cursor-pointer"><svg class=""
-                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="group-hover:stroke-green transition group-hover:opacity-100"
-                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
+               <div class="arrows flex justify-center lg:self-end lg:mb-0.5 lg:space-x-5 space-x-2.5">
+                  <a class="wiadomosci-home__nav__prev previous group cursor-pointer">
+                     <svg class="" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="group-hover:stroke-green transition group-hover:opacity-100" opacity=".3" cx="15"
+                           cy="15" r="13.5" stroke="#282828" stroke-width="3">
                         </circle>
-                        <path class="transition group-hover:fill-green group-hover:opacity-100"
-                            opacity=".3"
-                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                            fill="#282828"></path>
-                    </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
-                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="transition group-hover:stroke-green group-hover:opacity-100"
-                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
-                        </circle>
-                        <path class="transition group-hover:fill-green group-hover:opacity-100"
-                            opacity=".3"
-                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                            fill="#282828"></path>
-                    </svg></a></div>
-                  </div>
-                  <a href="">
-                     <img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt="">
-                  </a>
-                  <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
-                     <li><a href="">Kategoria</a></li>
-                 </ul>
-                 <div class="text-h3 mt-4">
-                     <h3>Lorem ipsum dolor sit consectetur</h3>
-                 </div>
-               </div>
-               <div class="col-span-full lg:col-span-4">
-                  <div class="flex flex-wrap items-center justify-between underline-custom mb-7">
-                     <div class="text-h2">
-                        <h2><span class="text-green">B</span>aza wiedzy</h2>
-                     </div>
-                     <div class="arrows flex justify-center self-end mb-2 space-x-5"><a class="previous group cursor-pointer"><svg class=""
-                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="group-hover:stroke-green transition group-hover:opacity-100"
-                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
-                        </circle>
-                        <path class="transition group-hover:fill-green group-hover:opacity-100"
-                            opacity=".3"
-                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                            fill="#282828"></path>
-                    </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
-                        width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="transition group-hover:stroke-green group-hover:opacity-100"
-                            opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
-                        </circle>
-                        <path class="transition group-hover:fill-green group-hover:opacity-100"
-                            opacity=".3"
-                            d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                            fill="#282828"></path>
-                    </svg></a></div>
-                  </div>
-                  <a href="">
-                     <img class="rounded-sm" src="/assets/images/home/baza-wiedzy.png" alt="">
-                  </a>
-                  <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
-                     <li><a href="">Kategoria</a></li>
-                 </ul>
-                 <div class="text-h3 mt-4">
-                     <h3>Lorem ipsum dolor sit consectetur</h3>
-                 </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end header -->
-      <section class="o-klastrze pt-[60px] pb-[45px] relative">
-         <img class="absolute left-0 hidden 2xl:block top-0 object-right" src="/assets/images/backgrounds/home-oklastrze.png" alt="">
-         <div class="container relative">
-            <div class="grid grid-cols-12 gap-[30px] 2xl:w-[calc(100%+30px)]">
-               <div class="2xl:-ml-[30px] col-span-full 2xl:col-span-10 2xl:col-start-3">
-                  <div class="text-h2 relative flex mb-[45px]">
-                     <div class="underline-custom w-[350px] ">
-                        <h2>O <span class="text-green">Klastrze</span></h2>
-                     </div>
-                  </div>
-                  <div class="text-desc mb-5">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
-                  </div>
-                  <div class="col-span-full lg:col-span-8 lg:col-start-3 grid grid-cols-8 gap-[70px]">
-                     <div class="col-span-full lg:col-span-4">
-                        <div class="bg-white rounded shadow-sm px-[30px] py-5">
-                           <div class="text-h3 underline-custom mb-[25px]">
-                              <h3>Kim <span class="text-green">jesteśmy? </span></h3>
-                           </div>
-                           <div class="text-desc mb-5">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
-                           </div>
-                           <a href=""
-                              class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
-                              Dowiedz
-                              się więcej 
-                              <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
-                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                       d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
-                                    </path>
-                                 </g>
-                                 <defs>
-                                    <clipPath id="a">
-                                       <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
-                                       </path>
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-span-full lg:col-span-4">
-                        <div class="bg-white rounded shadow-sm px-[30px] py-5">
-                           <div class="text-h3 underline-custom mb-[25px]">
-                              <h3>Dołącz <span class="text-green">do NAS!!!! </span></h3>
-                           </div>
-                           <div class="text-desc mb-5">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
-                           </div>
-                           <a href=""
-                              class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
-                              Dowiedz
-                              się więcej 
-                              <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
-                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                       d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
-                                    </path>
-                                 </g>
-                                 <defs>
-                                    <clipPath id="a">
-                                       <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
-                                       </path>
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mt-[45px] flex items-center justify-center">
-                     <a href="" class="btn btn-primary btn-navbar">Poznaj ofertę</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="all-firmy pt-[60px] pb-[77px]">
-         <div class="container relative">
-            <div class="grid-custom grid-custom__gapped">
-               <div class="col-span-full lg:col-span-4">
-                  <div class="text-h2 underline-custom">
-                     <h2>KNR <span class="text-green">Green</span></h2>
-                  </div>
-                  <div class="text-h5 mt-[5px] mb-[25px]">
-                     <p><span class="text-green">Certyfikacja </span>firm</p>
-                  </div>
-                  <div class="text-desc mb-[25px]">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
-                  </div>
-                  <a href=""
-                     class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
-                     Dowiedz
-                     się więcej 
-                     <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
-                           stroke-linejoin="round">
-                           <path
-                              d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
-                           </path>
-                        </g>
-                        <defs>
-                           <clipPath id="a">
-                              <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
-                              </path>
-                           </clipPath>
-                        </defs>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                           d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                           fill="#282828"></path>
                      </svg>
                   </a>
-               </div>
-               <div class="col-span-full lg:col-span-4">
-                <div class="text-h2 underline-custom">
-                   <h2>Pro<span class="text-green">Goz</span></h2>
-                </div>
-                <div class="text-h5 mt-[5px] mb-[25px]">
-                   <p>Cyrkularny <span class="text-green"> model </span>biznesowy</p>
-                </div>
-                <div class="text-desc mb-[25px]">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
-                </div>
-                <a href=""
-                   class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
-                   Dowiedz
-                   się więcej 
-                   <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
-                         stroke-linejoin="round">
-                         <path
-                            d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
-                         </path>
-                      </g>
-                      <defs>
-                         <clipPath id="a">
-                            <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
-                            </path>
-                         </clipPath>
-                      </defs>
-                   </svg>
-                </a>
-               </div>
-               <div class="col-span-full lg:col-span-4">
-                <div class="text-h2 underline-custom">
-                   <h2>Pro<span class="text-green">Inno</span></h2>
-                </div>
-                <div class="text-h5 mt-[5px] mb-[25px]">
-                   <p>Transformacja <span class="text-green">4.0</span></p>
-                </div>
-                <div class="text-desc mb-[25px]">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
-                </div>
-                <a href=""
-                   class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">
-                   Dowiedz
-                   się więcej 
-                   <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
-                         stroke-linejoin="round">
-                         <path
-                            d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
-                         </path>
-                      </g>
-                      <defs>
-                         <clipPath id="a">
-                            <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
-                            </path>
-                         </clipPath>
-                      </defs>
-                   </svg>
-                </a>
+                  <a class="wiadomosci-home__nav__next next group cursor-pointer">
+                     <svg class="transform rotate-180" width="30" height="30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle class="transition group-hover:stroke-green group-hover:opacity-100" opacity=".3" cx="15"
+                           cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                        </circle>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                           d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                           fill="#282828"></path>
+                     </svg>
+                  </a>
+
                </div>
             </div>
-            <div class="w-full flex items-center justify-center mt-[100px] mb-[30px]">
-                <div class="text-h2">
-                    <h2><span class="text-green">Najnowsze</span> certyfikacje KNR <span class="text-green">Green</span</h2>
-                </div>
+            <div class="wiadomosci-home swiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <a href="">
+                        <img class="rounded-sm mx-auto" src="/assets/images/wiadomosci-konkret-2.png" alt="">
+                     </a>
+                     <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
+                        <li><a href="">Kategoria</a></li>
+                     </ul>
+                     <div class="text-h3 mt-4">
+                        <h3>Lorem ipsum dolor sit consectetur</h3>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="">
+                        <img class="rounded-sm mx-auto" src="/assets/images/wiadomosci-konkret-2.png" alt="">
+                     </a>
+                     <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
+                        <li><a href="">Kategoria</a></li>
+                     </ul>
+                     <div class="text-h3 mt-4">
+                        <h3>Lorem ipsum dolor sit consectetur</h3>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="grid-custom grid-custom__gapped mb-7">
-                <div class="col-span-full lg:col-span-4">
-                    <div class="flex items-center">
-                        <img src="/assets/images/firma-img.png" alt="" class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
-                        <div class="ml-[30px] text flex flex-col">
-                            <div class="text-[#747474] text-[13px] leading-[24px]">
-                                <time>data przyznania</time>
-                            </div>
-                            <div class="text-h4 font-medium">
-                                <h3>Nazwa firmy</h3>
-                            </div>
-                            <div class="text-desc">
-                                <p>Typ certyfikatu</p>
-                                <p>Branża</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-full lg:col-span-4">
-                    <div class="flex items-center">
-                        <img src="/assets/images/firma-img.png" alt="" class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
-                        <div class="ml-[30px] text flex flex-col">
-                            <div class="text-[#747474] text-[13px] leading-[24px]">
-                                <time>data przyznania</time>
-                            </div>
-                            <div class="text-h4 font-medium">
-                                <h3>Nazwa firmy</h3>
-                            </div>
-                            <div class="text-desc">
-                                <p>Typ certyfikatu</p>
-                                <p>Branża</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-full lg:col-span-4">
-                    <div class="flex items-center">
-                        <img src="/assets/images/firma-img.png" alt="" class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
-                        <div class="ml-[30px] text flex flex-col">
-                            <div class="text-[#747474] text-[13px] leading-[24px]">
-                                <time>data przyznania</time>
-                            </div>
-                            <div class="text-h4 font-medium">
-                                <h3>Nazwa firmy</h3>
-                            </div>
-                            <div class="text-desc">
-                                <p>Typ certyfikatu</p>
-                                <p>Branża</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="lg:hidden flex items-center justify-center mt-[30px]">
+               <a href="/build/dist/wiadomosci.html" class="btn btn-primary btn-navbar">Przejdź do wiadomości</a>
             </div>
-            <div class="arrows flex justify-center space-x-5 mb-[36px]"><a class="previous group cursor-pointer"><svg class=""
-               width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <circle class="group-hover:stroke-green transition group-hover:opacity-100"
-                   opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
-               </circle>
-               <path class="transition group-hover:fill-green group-hover:opacity-100"
-                   opacity=".3"
-                   d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                   fill="#282828"></path>
-           </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
-               width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <circle class="transition group-hover:stroke-green group-hover:opacity-100"
-                   opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
-               </circle>
-               <path class="transition group-hover:fill-green group-hover:opacity-100"
-                   opacity=".3"
-                   d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                   fill="#282828"></path>
-           </svg></a></div>
+         </div>
+         <div class="col-span-full lg:col-span-4 xl:mr-[45px] mb-10 lg:mb-0">
+            <div class="text-h2 underline-custom">
+               <h2><span class="text-green">W</span>ydarzenia</h2>
+            </div>
+            <div>
+               <div inline-datepicker datepicker-format="dd/mm/yyyy" data-date="07/06/2022"></div>
+            </div>
             <div class="flex items-center justify-center">
-                <a href="" class="btn btn-primary btn-navbar">Poznaj wszystkie firmy</a>
+               <a href="" class="btn btn-primary btn-navbar">Przejdź do wydarzeń</a>
             </div>
          </div>
-      </section>
-      <!-- newsletter  -->
-      <section class="newsletter pt-[50px] pb-[84px]">
-         <div class="container">
-            <div class="grid-custom grid-custom__gapped">
-               <div class="col-span-full lg:col-span-7">
-                  <div class="text-h3 underline-custom underline-custom--dark mb-[30px]">
-                     <h3>Zapisz się do Newslettera</h3>
-                  </div>
-                  <div class="text-desc">
-                     <p>Rhoncus diam nullam hac nullam tempus amet bibendum. Et et dui quis vitae semper netus eget dui. Non pretium ullamcorper amet proin vitae etiam eu id facilisi. Netus lorem fames est, ultrices. Elementum sed morbi tempus purus velit maecenas. Lobortis fermentum, urna, sed ultrices nisi, id adipiscing a vitae. Iaculis sapien aenean tortor id.</p>
-                  </div>
-                  <div class="grid grid-cols-7 gap-x-[30px] mt-[30px]">
-                     <div class="col-span-full lg:col-span-4 xl:col-span-5">
-                        <input type="text" id="company" class="rounded-sm block w-full py-3 pl-2.5" placeholder="Podaj swój email" required>
+         
+         <div class="col-span-full lg:col-span-4 order-2">
+            <div class="flex flex-wrap items-center justify-between underline-custom mb-7">
+               <div class="text-h2">
+                  <h2><span class="text-green">B</span>aza wiedzy</h2>
+               </div>
+               <div class="arrows flex justify-center lg:self-end lg:mb-0.5 lg:space-x-5 space-x-2.5">
+                  <a class="baza__nav__prev previous group cursor-pointer">
+                     <svg class="" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="group-hover:stroke-green transition group-hover:opacity-100" opacity=".3" cx="15"
+                           cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                        </circle>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                           d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                           fill="#282828"></path>
+                     </svg>
+                  </a>
+                  <a class="baza__nav__next next group cursor-pointer">
+                     <svg class="transform rotate-180" width="30" height="30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle class="transition group-hover:stroke-green group-hover:opacity-100" opacity=".3" cx="15"
+                           cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                        </circle>
+                        <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                           d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                           fill="#282828"></path>
+                     </svg>
+                  </a>
+
+               </div>
+            </div>
+            <div class="baza-home swiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <a href="">
+                        <img class="rounded-sm mx-auto" src="/assets/images/home/baza-wiedzy.png" alt="">
+                     </a>
+                     <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
+                        <li><a href="">Kategoria</a></li>
+                     </ul>
+                     <div class="text-h3 mt-4">
+                        <h3>Lorem ipsum dolor sit consectetur</h3>
                      </div>
-                     <div class="col-span-full lg:col-span-3 xl:col-span-2 flex justify-center mt-5 lg:mt-0 | lg:inline">
-                        <button href="" class="btn btn-primary btn-navbar">ZAPISZ MNIE</button>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="">
+                        <img class="rounded-sm mx-auto" src="/assets/images/home/baza-wiedzy.png" alt="">
+                     </a>
+                     <ul class="filters text-single--filters flex flex-wrap mt-[23px]">
+                        <li><a href="">Kategoria</a></li>
+                     </ul>
+                     <div class="text-h3 mt-4">
+                        <h3>Lorem ipsum dolor sit consectetur</h3>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-      </section>
-      <!-- end newsletter  -->
-      <!-- fundusz start -->
-      <div class="relative bg-white py-[30px]">
-         <div class="container">
-            <div class="w-full hidden sm:flex">
-               <img src="/assets/images/fundusz-desktop.png" alt="">
-            </div>
-            <div class="w-full flex flex-col sm:hidden">
-               <img src="/assets/images/fundusz.png" alt="">
-               <img src="/assets/images/polska_edited.jpg" alt="">
-               <img src="/assets/images/unia.png" alt="">
+            
+            <div class="lg:hidden flex items-center justify-center mt-[30px]">
+               <a href="/build/dist/baza-wiedzy.html" class="btn btn-primary btn-navbar">Przejdź do bazy wiedzy</a>
             </div>
          </div>
       </div>
-      <!-- fundusz end -->
-      <!-- index end -->
+   </div>
+</section>
+<!-- end header -->
+<section class="o-klastrze pt-[60px] lg:pb-[45px] pb-[80px] relative">
+   <img class="absolute left-0 2xl:block md:hidden block w-auto h-auto top-1/2 -translate-y-1/2 object-right"
+      src="/assets/images/backgrounds/home-oklastrze.png" alt="">
+   <div class="container relative">
+      <div class="grid grid-cols-12 gap-x-[30px] 2xl:w-[calc(100%+30px)]">
+         <div class="2xl:-ml-[30px] col-span-full 2xl:col-span-10 2xl:col-start-3">
+            <div class="text-h2 relative flex mb-[45px]">
+               <div class="underline-custom w-[350px] ">
+                  <h2>O <span class="text-green">Klastrze</span></h2>
+               </div>
+            </div>
+            <div class="text-desc mb-5">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo.
+                  Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin.
+                  Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+            </div>
+            <div class="col-span-full lg:col-span-8 lg:col-start-3 grid grid-cols-8 lg:gap-x-[70px] gap-y-10">
+               <div class="col-span-full lg:col-span-4">
+                  <div class="bg-white/[0.95] lg:bg-white rounded-[15px] shadow-sm px-5 lg:px-[30px] py-5">
+                     <div class="text-h3 underline-custom mb-[25px]">
+                        <h3>Kim <span class="text-green">jesteśmy? </span></h3>
+                     </div>
+                     <div class="text-desc mb-5">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent
+                           justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa
+                           felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat
+                           ultrices pulvinar fames. </p>
+                     </div>
+                     <div class="mt-5 px-[8.5px]">
+                        <a href=""
+                           class="font-bold tracking-[0.1em] justify-center lg:justify-start uppercase flex items-center py-[5px] group transition-[color]">
+                           Dowiedz
+                           się więcej
+                           <svg class="transition-[padding] group-hover:pl-1" width="29" height="30" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#a)" stroke="#000" stroke-width="1.785" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                 <path d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                 </path>
+                              </g>
+                              <defs>
+                                 <clipPath id="a">
+                                    <path fill="#000" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                                    </path>
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-span-full lg:col-span-4">
+                  <div class="bg-white/[0.95] lg:bg-white rounded-[15px] shadow-sm px-5 lg:px-[30px] py-5">
+                     <div class="text-h3 underline-custom mb-[25px]">
+                        <h3>Dołącz <span class="text-green">do NAS!!!! </span></h3>
+                     </div>
+                     <div class="text-desc mb-5">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent
+                           justo. Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa
+                           felis pretium proin. Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat
+                           ultrices pulvinar fames. </p>
+                     </div>
+                     <div class="mt-5 px-[8.5px]">
+                        <a href=""
+                           class="font-bold tracking-[0.1em] justify-center lg:justify-start uppercase flex items-center py-[5px] group transition-[color]">
+                           Dowiedz
+                           się więcej
+                           <svg class="transition-[padding] group-hover:pl-1" width="29" height="30" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#a)" stroke="#000" stroke-width="1.785" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                 <path d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                 </path>
+                              </g>
+                              <defs>
+                                 <clipPath id="a">
+                                    <path fill="#000" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                                    </path>
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="mt-[45px] flex items-center justify-center">
+               <a href="" class="btn btn-primary btn-navbar">Poznaj ofertę</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="all-firmy pt-[60px] pb-[77px]">
+   <div class="container relative">
+      <div class="grid-custom grid-custom__gapped">
+         <div class="col-span-full lg:col-span-4">
+            <div class="text-h2 underline-custom">
+               <h2>KNR <span class="text-green">Green</span></h2>
+            </div>
+            <div class="text-h5 mt-[5px] mb-[25px]">
+               <p><span class="text-green">Certyfikacja </span>firm</p>
+            </div>
+            <div class="text-desc mb-[25px]">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo.
+                  Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin.
+                  Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+            </div>
+            <div class="mt-5 px-[8.5px]">
+               <a href=""
+                  class="font-bold tracking-[0.1em] justify-center lg:justify-start uppercase flex items-center py-[5px] group transition-[color]">
+                  Dowiedz
+                  się więcej
+                  <svg class="transition-[padding] group-hover:pl-1" width="29" height="30" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#a)" stroke="#000" stroke-width="1.785" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                        </path>
+                     </g>
+                     <defs>
+                        <clipPath id="a">
+                           <path fill="#000" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                           </path>
+                        </clipPath>
+                     </defs>
+                  </svg>
+               </a>
+            </div>
+         </div>
+         <div class="col-span-full lg:col-span-4">
+            <div class="text-h2 underline-custom">
+               <h2>Pro<span class="text-green">Goz</span></h2>
+            </div>
+            <div class="text-h5 mt-[5px] mb-[25px]">
+               <p>Cyrkularny <span class="text-green"> model </span>biznesowy</p>
+            </div>
+            <div class="text-desc mb-[25px]">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo.
+                  Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin.
+                  Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+            </div>
+            <div class="mt-5 px-[8.5px]">
+               <a href=""
+                  class="font-bold tracking-[0.1em] justify-center lg:justify-start uppercase flex items-center py-[5px] group transition-[color]">
+                  Dowiedz
+                  się więcej
+                  <svg class="transition-[padding] group-hover:pl-1" width="29" height="30" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#a)" stroke="#000" stroke-width="1.785" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                        </path>
+                     </g>
+                     <defs>
+                        <clipPath id="a">
+                           <path fill="#000" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                           </path>
+                        </clipPath>
+                     </defs>
+                  </svg>
+               </a>
+            </div>
+         </div>
+         <div class="col-span-full lg:col-span-4">
+            <div class="text-h2 underline-custom">
+               <h2>Pro<span class="text-green">Inno</span></h2>
+            </div>
+            <div class="text-h5 mt-[5px] mb-[25px]">
+               <p>Transformacja <span class="text-green">4.0</span></p>
+            </div>
+            <div class="text-desc mb-[25px]">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt libero, praesent justo.
+                  Sagittis, est vitae ultrices tempus montes, euismod odio ullamcorper. Proin massa felis pretium proin.
+                  Scelerisque adipiscing quis vulputate ornare. Morbi arcu volutpat ultrices pulvinar fames. </p>
+            </div>
+            <div class="mt-5 px-[8.5px]">
+               <a href=""
+                  class="font-bold tracking-[0.1em] justify-center lg:justify-start uppercase flex items-center py-[5px] group transition-[color]">
+                  Dowiedz
+                  się więcej
+                  <svg class="transition-[padding] group-hover:pl-1" width="29" height="30" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#a)" stroke="#000" stroke-width="1.785" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                        </path>
+                     </g>
+                     <defs>
+                        <clipPath id="a">
+                           <path fill="#000" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                           </path>
+                        </clipPath>
+                     </defs>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="w-full flex items-center justify-center mt-[100px] mb-[30px]">
+         <div class="text-h3 text-center lg:text-left">
+            <h2><span class="text-green">Najnowsze</span> certyfikacje KNR <span class="text-green">Green</span< /h2>
+         </div>
+      </div>
+      <div class="swiper carousel-testimonials mb-7">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="flex items-center">
+                  <img src="/assets/images/firma-img.png" alt=""
+                     class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
+                  <div class="ml-[30px] text flex flex-col">
+                     <div class="text-[#747474] text-[13px] leading-[24px]">
+                        <time>data przyznania</time>
+                     </div>
+                     <div class="text-h4 font-medium">
+                        <h3>Nazwa firmy</h3>
+                     </div>
+                     <div class="text-desc">
+                        <p>Typ certyfikatu</p>
+                        <p>Branża</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="flex items-center">
+                  <img src="/assets/images/firma-img.png" alt=""
+                     class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
+                  <div class="ml-[30px] text flex flex-col">
+                     <div class="text-[#747474] text-[13px] leading-[24px]">
+                        <time>data przyznania</time>
+                     </div>
+                     <div class="text-h4 font-medium">
+                        <h3>Nazwa firmy</h3>
+                     </div>
+                     <div class="text-desc">
+                        <p>Typ certyfikatu</p>
+                        <p>Branża</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="flex items-center">
+                  <img src="/assets/images/firma-img.png" alt=""
+                     class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
+                  <div class="ml-[30px] text flex flex-col">
+                     <div class="text-[#747474] text-[13px] leading-[24px]">
+                        <time>data przyznania</time>
+                     </div>
+                     <div class="text-h4 font-medium">
+                        <h3>Nazwa firmy</h3>
+                     </div>
+                     <div class="text-desc">
+                        <p>Typ certyfikatu</p>
+                        <p>Branża</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="flex items-center">
+                  <img src="/assets/images/firma-img.png" alt=""
+                     class="shrink-0 object-cover object-center rounded-[999px] h-[70px]">
+                  <div class="ml-[30px] text flex flex-col">
+                     <div class="text-[#747474] text-[13px] leading-[24px]">
+                        <time>data przyznania</time>
+                     </div>
+                     <div class="text-h4 font-medium">
+                        <h3>Nazwa firmy</h3>
+                     </div>
+                     <div class="text-desc">
+                        <p>Typ certyfikatu</p>
+                        <p>Branża</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+      </div>
+      <div class="carousel-testimonials__nav flex justify-center lg:space-x-5 space-x-[15px] mb-[36px]">
+         <a class="carousel-testimonials__nav__prev previous group cursor-pointer">
+            <svg class="" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <circle class="group-hover:stroke-green transition group-hover:opacity-100" opacity=".3" cx="15" cy="15"
+                  r="13.5" stroke="#282828" stroke-width="3">
+               </circle>
+               <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                  d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                  fill="#282828"></path>
+            </svg>
+         </a>
+         <a class="carousel-testimonials__nav__next next group cursor-pointer">
+            <svg class="transform rotate-180" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <circle class="transition group-hover:stroke-green group-hover:opacity-100" opacity=".3" cx="15" cy="15"
+                  r="13.5" stroke="#282828" stroke-width="3">
+               </circle>
+               <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                  d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                  fill="#282828"></path>
+            </svg>
+         </a>
+      </div>
+      <div class="flex items-center justify-center">
+         <a href="" class="btn btn-primary btn-navbar">Poznaj wszystkie firmy</a>
+      </div>
+   </div>
+</section>
+<!-- newsletter  -->
+<section class="newsletter pt-[50px] pb-[84px]">
+   <div class="container">
+      <div class="grid-custom grid-custom__gapped">
+         <div class="col-span-full lg:col-span-7">
+            <div class="text-h3 underline-custom underline-custom--dark mb-[30px]">
+               <h3>Zapisz się do Newslettera</h3>
+            </div>
+            <div class="text-desc">
+               <p>Rhoncus diam nullam hac nullam tempus amet bibendum. Et et dui quis vitae semper netus eget dui. Non
+                  pretium ullamcorper amet proin vitae etiam eu id facilisi. Netus lorem fames est, ultrices. Elementum
+                  sed morbi tempus purus velit maecenas. Lobortis fermentum, urna, sed ultrices nisi, id adipiscing a
+                  vitae. Iaculis sapien aenean tortor id.</p>
+            </div>
+            <div class="grid grid-cols-7 gap-x-[30px] mt-[30px]">
+               <div class="col-span-full lg:col-span-4 xl:col-span-5">
+                  <input type="text" id="company" class="rounded-sm block w-full py-3 pl-2.5"
+                     placeholder="Podaj swój email" required>
+               </div>
+               <div class="col-span-full lg:col-span-3 xl:col-span-2 flex justify-center mt-5 lg:mt-0 | lg:inline">
+                  <button href="" class="btn btn-primary btn-navbar">ZAPISZ MNIE</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- end newsletter  -->
+<!-- fundusz start -->
+<div class="relative bg-white py-[30px]">
+   <div class="container">
+      <div class="w-full hidden sm:flex">
+         <img src="/assets/images/fundusz-desktop.png" alt="">
+      </div>
+      <div class="w-full flex flex-col sm:hidden">
+         <img src="/assets/images/fundusz.png" alt="">
+         <img src="/assets/images/polska_edited.jpg" alt="">
+         <img src="/assets/images/unia.png" alt="">
+      </div>
+   </div>
+</div>
+<!-- fundusz end -->
+<!-- index end -->
 <include src="../layouts/close.html"></include>
 <include src="../layouts/footer.html"></include>

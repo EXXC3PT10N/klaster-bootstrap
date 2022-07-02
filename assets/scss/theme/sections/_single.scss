@@ -61,7 +61,19 @@
         }
     }
  
-}
+    }  
+    &--header {
+        border-bottom: 1px solid #C4C4C4;
+        input {
+            background: #fff;
+            @apply py-[5px] pl-2.5 pr-[50px] w-full rounded-sm;
+            @apply text-sm leading-[24px] font-normal text-blue-dark;
+            &::placeholder {
+                @apply text-sm leading-[24px] font-light text-[#666];
+    
+            }
+        }
+    }    
 }
 
 .select {

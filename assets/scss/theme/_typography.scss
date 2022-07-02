@@ -1,14 +1,24 @@
+.wcag {
+    @apply text-sm leading-6 font-normal;
+}
 .text-h1 {
+    //40/45
+    @apply text-[40px] leading-[45px] tracking-wider font-bold uppercase text-white;
     //68/80 
-    @apply text-[68px] leading-[80px] font-bold uppercase text-white;
+    @apply lg:text-[68px] lg:leading-[80px];
 }
 .text-h2 {
+    //35/58
+    @apply text-[35px] leading-[58px] font-bold;
     //38/44
-    @apply text-[42px] leading-[58px] font-bold;
+    @apply lg:text-[42px];
+   
 }
 .text-h3 {
+    //30/40
+    @apply text-3xl leading-10 font-medium;
     //38/44
-    @apply text-[38px] leading-[44px] font-medium;
+    @apply lg:text-[38px] lg:leading-[44px];
 }
 .text-h5 {
     //21/26 

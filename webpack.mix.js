@@ -14,9 +14,11 @@ mix.webpackConfig({
         publicPath: '/build/',
     },
 });
+
 require('mix-html-builder');
 
 mix.html({
+    
     htmlRoot: './src/**.html',
     output: 'dist',
     partialRoot: './src/partials',  

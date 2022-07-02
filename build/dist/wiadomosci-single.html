@@ -15,41 +15,89 @@
 </head>
 
 <body class="home"></body></html>
-    <header class="flex flex-wrap items-center px-2.5 lg:px-5 py-[30px] bg-blue-dark text-white">
-    <div class="2xl:mr-7 mr-auto shrink-0 flex items-center lg:space-x-[10px] space-x-1.5">
-       <a href="/build/dist/index.html"><img class="lg:w-auto w-[150px]" src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
-       <a href=""><img class="lg:w-auto w-[130px]" src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
-    </div>
-    <div class="buttons flex 2xl:order-2">
-       <a class="btn btn-primary btn-navbar mr-[55px] 2xl:mr-0 hidden lg:flex" href="/build/dist/index.html">strefa klastra</a>
-       <button class="js-hamburger text-black w-[45px] h-[45px] relative focus:outline-none block | 2xl:hidden">
-          <div class="block w-[33px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
-              <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
-              <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
-          </div>
-       </button>
-    </div>
-    <ul class="header-menu 2xl:mr-10 grow w-full text-right 2xl:text-center 2xl:flex 2xl:w-auto md:order-1 hiding">
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/wiadomosci.html">Wiadomości</a></li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/o-klastrze.html">O klastrze</a></li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/oferta-klastra.html">Oferta
-          Klastra</a>
-       </li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/gielda-uslug.html">Giełda Usług</a>
-       </li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/showroom.html">Showroom</a></li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px] active" href="/build/dist/projekty.html">Projekty</a></li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/akademia-recyklingu.html">Akademia
-          Recyklingu</a>
-       </li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/baza-wiedzy.html">Baza wiedzy</a>
-       </li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/kontakt.html">Kontakt</a></li>
-       <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/english.html">English</a></li>
-       <li class="lg:hidden flex justify-end mt-[30px]"><a class="btn btn-primary btn-navbar" href="/">strefa klastra</a></li>
-    </ul>  
- </header>
+    <div class="wcag">
+   <div class="container hidden xl:block pt-[15px] pb-2.5">
+      <div class="flex items-center">
+         <div class="left--first flex">
+            <div class="text-base-sm pr-5">
+               <p>Rozmiar czcionki</p>
+            </div>
+            <div class="anchors--sizes flex space-x-2.5">
+               <a href="">A-</a>
+               <a href="">A</a>
+               <a href="">A+</a>
+            </div>
+         </div>
+         <div class="contrast ml-[50px]">
+            <a href="" class="flex h-full"><span class="mr-5">Kontrast</span><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 24.4048C19.0748 24.4048 24.4047 19.0748 24.4047 12.5C24.4047 5.92518 19.0748 0.595238 12.5 0.595238C5.92516 0.595238 0.595215 5.92518 0.595215 12.5C0.595215 19.0748 5.92516 24.4048 12.5 24.4048Z" stroke="#302B3F" stroke-miterlimit="10"></path>
+                  <path d="M12.4999 1.78571C6.58326 1.78571 1.78564 6.58333 1.78564 12.5C1.78564 18.4167 6.58326 23.2143 12.4999 23.2143V1.78571Z" fill="#302B3F"></path>
+               </svg>
+            </a>
+         </div>
+         <div class="pictures ml-[50px] flex items-center justify-center">
+            <p class="mr-5">Obrazy</p>
+            <a href="" class="mr-2.5">
+               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5 9.375C17.5 9.62123 17.4515 9.86505 17.3573 10.0925C17.263 10.32 17.1249 10.5267 16.9508 10.7008C16.7767 10.8749 16.57 11.013 16.3425 11.1073C16.115 11.2015 15.8712 11.25 15.625 11.25C15.3788 11.25 15.135 11.2015 14.9075 11.1073C14.68 11.013 14.4733 10.8749 14.2992 10.7008C14.1251 10.5267 13.987 10.32 13.8927 10.0925C13.7985 9.86505 13.75 9.62123 13.75 9.375C13.75 8.87772 13.9475 8.40081 14.2992 8.04917C14.6508 7.69754 15.1277 7.5 15.625 7.5C16.1223 7.5 16.5992 7.69754 16.9508 8.04917C17.3025 8.40081 17.5 8.87772 17.5 9.375ZM16.25 9.375C16.25 9.20924 16.1842 9.05027 16.0669 8.93306C15.9497 8.81585 15.7908 8.75 15.625 8.75C15.4592 8.75 15.3003 8.81585 15.1831 8.93306C15.0658 9.05027 15 9.20924 15 9.375C15 9.54076 15.0658 9.69973 15.1831 9.81694C15.3003 9.93415 15.4592 10 15.625 10C15.7908 10 15.9497 9.93415 16.0669 9.81694C16.1842 9.69973 16.25 9.54076 16.25 9.375ZM3.75 7.5C3.75 6.50544 4.14509 5.55161 4.84835 4.84835C5.55161 4.14509 6.50544 3.75 7.5 3.75H17.5C18.4946 3.75 19.4484 4.14509 20.1517 4.84835C20.8549 5.55161 21.25 6.50544 21.25 7.5V17.5C21.25 18.4946 20.8549 19.4484 20.1517 20.1517C19.4484 20.8549 18.4946 21.25 17.5 21.25H7.5C6.50544 21.25 5.55161 20.8549 4.84835 20.1517C4.14509 19.4484 3.75 18.4946 3.75 17.5V7.5ZM7.5 5C6.83696 5 6.20107 5.26339 5.73223 5.73223C5.26339 6.20107 5 6.83696 5 7.5V17.5C5 17.9663 5.1275 18.4025 5.35 18.775L11.1863 13.04C11.5369 12.6957 12.0086 12.5028 12.5 12.5028C12.9914 12.5028 13.4631 12.6957 13.8137 13.04L19.6512 18.775C19.8804 18.3892 20.0009 17.9487 20 17.5V7.5C20 6.83696 19.7366 6.20107 19.2678 5.73223C18.7989 5.26339 18.163 5 17.5 5H7.5ZM7.5 20H17.5C17.9625 20 18.3938 19.875 18.765 19.6575L12.9375 13.9325C12.8207 13.818 12.6636 13.7538 12.5 13.7538C12.3364 13.7538 12.1793 13.818 12.0625 13.9325L6.235 19.6575C6.61847 19.8827 7.0553 20.001 7.5 20Z" fill="#302B3F"></path>
+               </svg>
+            </a>
+            <a href="">
+               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.875 12.5C8.36684 12.5 9.79758 11.9074 10.8525 10.8525C11.9074 9.79758 12.5 8.36684 12.5 6.875C12.5 5.38316 11.9074 3.95242 10.8525 2.89752C9.79758 1.84263 8.36684 1.25 6.875 1.25C5.38316 1.25 3.95242 1.84263 2.89752 2.89752C1.84263 3.95242 1.25 5.38316 1.25 6.875C1.25 8.36684 1.84263 9.79758 2.89752 10.8525C3.95242 11.9074 5.38316 12.5 6.875 12.5ZM6.875 11.25C5.8925 11.25 4.985 10.925 4.255 10.3787L10.38 4.255C10.8663 4.90535 11.162 5.67821 11.234 6.48708C11.306 7.29595 11.1515 8.10889 10.7877 8.83491C10.4239 9.56094 9.86523 10.1714 9.1742 10.5979C8.48317 11.0244 7.68707 11.2502 6.875 11.25ZM9.495 3.37125L3.37 9.49625C2.73812 8.65375 2.43135 7.61159 2.50601 6.56111C2.58066 5.51063 3.03173 4.52233 3.77641 3.77766C4.52108 3.03298 5.50938 2.58191 6.55986 2.50726C7.61034 2.4326 8.6525 2.73937 9.495 3.37125ZM3.75 13C4.14625 13.2025 4.56375 13.3675 5 13.4912V17.5C5 17.9662 5.1275 18.4025 5.35 18.775L11.1862 13.04C11.5369 12.6957 12.0086 12.5028 12.5 12.5028C12.9914 12.5028 13.4631 12.6957 13.8137 13.04L19.6512 18.775C19.8804 18.3892 20.0009 17.9487 20 17.5V7.5C20 6.83696 19.7366 6.20107 19.2678 5.73223C18.7989 5.26339 18.163 5 17.5 5H13.4912C13.3689 4.56821 13.2044 4.14952 13 3.75H17.5C18.4946 3.75 19.4484 4.14509 20.1516 4.84835C20.8549 5.55161 21.25 6.50544 21.25 7.5V17.5C21.25 18.4946 20.8549 19.4484 20.1516 20.1516C19.4484 20.8549 18.4946 21.25 17.5 21.25H7.5C6.50544 21.25 5.55161 20.8549 4.84835 20.1516C4.14509 19.4484 3.75 18.4946 3.75 17.5V13ZM6.235 19.6575C6.61847 19.8827 7.0553 20.001 7.5 20H17.5C17.9625 20 18.3937 19.875 18.765 19.6575L12.9375 13.9325C12.8207 13.818 12.6636 13.7538 12.5 13.7538C12.3364 13.7538 12.1793 13.818 12.0625 13.9325L6.235 19.6575ZM17.5 9.375C17.5 9.62123 17.4515 9.86505 17.3573 10.0925C17.263 10.32 17.1249 10.5267 16.9508 10.7008C16.7767 10.8749 16.57 11.013 16.3425 11.1073C16.115 11.2015 15.8712 11.25 15.625 11.25C15.3788 11.25 15.135 11.2015 14.9075 11.1073C14.68 11.013 14.4733 10.8749 14.2992 10.7008C14.1251 10.5267 13.987 10.32 13.8927 10.0925C13.7985 9.86505 13.75 9.62123 13.75 9.375C13.75 8.87772 13.9475 8.4008 14.2992 8.04917C14.6508 7.69754 15.1277 7.5 15.625 7.5C16.1223 7.5 16.5992 7.69754 16.9508 8.04917C17.3025 8.4008 17.5 8.87772 17.5 9.375ZM16.25 9.375C16.25 9.20924 16.1842 9.05027 16.0669 8.93306C15.9497 8.81585 15.7908 8.75 15.625 8.75C15.4592 8.75 15.3003 8.81585 15.1831 8.93306C15.0658 9.05027 15 9.20924 15 9.375C15 9.54076 15.0658 9.69973 15.1831 9.81694C15.3003 9.93415 15.4592 10 15.625 10C15.7908 10 15.9497 9.93415 16.0669 9.81694C16.1842 9.69973 16.25 9.54076 16.25 9.375Z" fill="#302B3F"></path>
+               </svg>
+            </a>
+         </div>
+         <div class="search ml-auto">
+            <form>
+               <div class="search search--header relative"><input type="search" id="default-search" class="outline-none" placeholder="" required=""><button type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#302B3F"></path>
+                        </svg>
+                        </button></div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<header class="flex flex-wrap items-center px-2.5 lg:px-5 py-[30px] bg-blue-dark text-white">
+   <div class="2xl:mr-7 mr-auto shrink-0 flex items-center lg:space-x-[10px] space-x-1.5">
+      <a href="/build/dist/index.html"><img class="lg:w-auto w-[150px]" src="/assets/images/icons/header-text.svg" alt="Klaster logo"></a>
+      <a href=""><img class="lg:w-auto w-[130px]" src="/assets/images/icons/navbar-birds.svg" alt="Key National Cluster"></a>
+   </div>
+   <div class="buttons flex 2xl:order-2">
+      <a class="btn btn-primary btn-navbar mr-[55px] 2xl:mr-0 hidden lg:flex" href="/build/dist/index.html">strefa
+         klastra</a>
+      <button class="js-hamburger text-black w-[45px] h-[45px] relative focus:outline-none block | 2xl:hidden">
+         <div class="block w-[33px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
+            <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
+            <span aria-hidden="true" class="block absolute rounded-full h-1 w-[33px] bg-green transition duration-500 ease-in-out"></span>
+         </div>
+      </button>
+   </div>
+   <ul class="header-menu 2xl:mr-10 grow w-full text-right 2xl:text-center 2xl:flex 2xl:w-auto md:order-1 hiding">
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/wiadomosci.html">Wiadomości</a></li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/o-klastrze.html">O klastrze</a></li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/oferta-klastra.html">Oferta
+            Klastra</a>
+      </li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/gielda-uslug.html">Giełda Usług</a>
+      </li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/showroom.html">Showroom</a></li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px] active" href="/build/dist/projekty.html">Projekty</a></li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/akademia-recyklingu.html">Akademia
+            Recyklingu</a>
+      </li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/baza-wiedzy.html">Baza wiedzy</a>
+      </li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/kontakt.html">Kontakt</a></li>
+      <li class="2xl:text-[18px] 2xl:leading-6 text-[25px] leading-[45px]"><a class="p-[10px]" href="/build/dist/english.html">English</a></li>
+      <li class="lg:hidden flex justify-end mt-[30px]"><a class="btn btn-primary btn-navbar" href="/">strefa klastra</a>
+      </li>
+   </ul>
+</header>
     
     <div class="relative h-[300px] flex items-end pb-[30px]">
         <div class="text-h1 z-50 relative container">
@@ -203,12 +251,12 @@
 <script type="text/javascript" src="/build/js/app.js" id="app-js"></script>
 <script type="text/javascript" src="/assets/js/utils/datepicker.js"></script>
 
-    <footer class="bg-blue-dark text-white pt-[72px] pb-[120px]">
+    <footer class="bg-blue-dark text-white pt-5 pb-6 lg:pt-[72px] lg:pb-[120px]">
       <div class="container">
          <div class="grid-custom grid-custom__gapped">
             <div class="col-span-full md:col-span-5 flex">
-               <div class="shrink-0"><a href="/"><img src="/assets/images/icons/main-logo.svg" alt=""></a></div>
-               <div class="ml-10 text">
+               <div class="shrink-0"><a href="/"><img class="w-[120px] lg:w-auto" src="/assets/images/icons/main-logo.svg" alt=""></a></div>
+               <div class="ml-[15px] lg:ml-10 text">
                   <div class="text-h5">
                      <p>O firmie</p>
                   </div>
@@ -219,20 +267,23 @@
                   </div>
                </div>
             </div>
-            <div class="col-span-full md:col-span-3">
-               <div class="text-h5">
-                  <p>Kontakt</p>
-               </div>
-               <div class="text-base">
-                  <div class="element flex space-x-1"><img src="/assets/images/icons/Phone.svg" alt=""><a href="">ul. Wybrana 3/5,
-                     00-000 Miasto</a>
+            <div class="flex justify-center lg:block col-span-full md:col-span-3">
+               <div class="inline-flex flex-col">
+                  <div class="text-h5">
+                     <p>Kontakt</p>
                   </div>
-                  <div class="element flex space-x-1"><img src="/assets/images/icons/Email.svg" alt=""><a href="tel:+48 123 456 789">+48 123 456 789</a></div>
-                  <div class="element flex space-x-1"><img src="/assets/images/icons/Location.svg" alt=""><a href="mailto:kontakt@firma.com">kontakt@firma.com</a></div>
+                  <div class="text-base">
+                     <div class="element flex space-x-1"><img src="/assets/images/icons/Phone.svg" alt=""><a href="">ul. Wybrana 3/5,
+                        00-000 Miasto</a>
+                     </div>
+                     <div class="element flex space-x-1"><img src="/assets/images/icons/Email.svg" alt=""><a href="tel:+48 123 456 789">+48 123 456 789</a></div>
+                     <div class="element flex space-x-1"><img src="/assets/images/icons/Location.svg" alt=""><a href="mailto:kontakt@firma.com">kontakt@firma.com</a></div>
+                  </div>
                </div>
+               
             </div>
-            <div class="col-span-full | md:col-start-10 md:col-span-3">
-               <div class="text-h5 mb-[30px]">
+            <div class="flex justify-between md:block col-span-full | md:col-start-10 md:col-span-3">
+               <div class="text-h5 lg:mb-[30px]">
                   <p>Znajdź Nas
                      <br>na social media
                   </p>
