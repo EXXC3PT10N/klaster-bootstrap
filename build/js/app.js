@@ -22430,7 +22430,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var sliders = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var HeroSlider, carouselTestimonials, wiadomosciHome, bazaHome, bazawiedzyPage, SwiperLib, Swiper, HeroSliderSwiper;
+    var HeroSlider, carouselTestimonials, wiadomosciHome, bazaHome, bazawiedzyPage, wiadomosciPage, firmyPagination, SwiperLib, Swiper, HeroSliderSwiper, firmyPaginationSwiper;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -22439,17 +22439,19 @@ var sliders = /*#__PURE__*/function () {
             carouselTestimonials = document.querySelectorAll('.carousel-testimonials') !== null;
             wiadomosciHome = document.querySelectorAll('.wiadomosci-home') !== null;
             bazaHome = document.querySelectorAll('.baza-home') !== null;
-            bazawiedzyPage = document.querySelectorAll('.baza-wiedzy-slider') !== null; // Execute code if You really need it
+            bazawiedzyPage = document.querySelectorAll('.baza-wiedzy-slider') !== null;
+            wiadomosciPage = document.querySelectorAll('.wiadomosci-page') !== null;
+            firmyPagination = document.querySelectorAll('.firmy-pagination') !== null; // Execute code if You really need it
 
-            if (!(HeroSlider || carouselTestimonials || wiadomosciHome || bazaHome || bazawiedzyPage)) {
-              _context.next = 15;
+            if (!(HeroSlider || carouselTestimonials || wiadomosciHome || bazaHome || bazawiedzyPage || wiadomosciPage || firmyPagination)) {
+              _context.next = 19;
               break;
             }
 
-            _context.next = 8;
+            _context.next = 10;
             return __webpack_require__.e(/*! import() */ "node_modules_swiper_swiper-bundle_esm_js").then(__webpack_require__.bind(__webpack_require__, /*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js"));
 
-          case 8:
+          case 10:
             SwiperLib = _context.sent;
             Swiper = SwiperLib["default"];
 
@@ -22464,6 +22466,30 @@ var sliders = /*#__PURE__*/function () {
                   el: '.hero-slider__pagination',
                   type: 'bullets',
                   clickable: true
+                }
+              });
+            }
+
+            if (firmyPagination) {
+              firmyPaginationSwiper = new Swiper('.firmy-pagination', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                  el: '.firmy-slider__pagination',
+                  type: 'bullets',
+                  clickable: true
+                },
+                breakpoints: {
+                  0: {
+                    slidesPerView: 1
+                  },
+                  768: {
+                    slidesPerView: 2
+                  },
+                  1366: {
+                    slidesPerView: 3
+                  }
                 }
               });
             }
@@ -22585,7 +22611,31 @@ var sliders = /*#__PURE__*/function () {
               });
             }
 
-          case 15:
+            if (wiadomosciPage) {
+              document.querySelectorAll('.wiadomosci-page').forEach(function (el) {
+                var carouselTestimonialSwiper = new Swiper(el, {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  loop: true
+                });
+                var prevBtn = document.querySelector('.wiadomosci__nav__prev'),
+                    nextBtn = document.querySelector('.wiadomosci__nav__next');
+
+                if (prevBtn != null) {
+                  prevBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slidePrev();
+                  }, false);
+                }
+
+                if (nextBtn != null) {
+                  nextBtn.addEventListener('click', function () {
+                    carouselTestimonialSwiper.slideNext();
+                  }, false);
+                }
+              });
+            }
+
+          case 19:
           case "end":
             return _context.stop();
         }

@@ -1,0 +1,169 @@
+
+<include src="../layouts/open.html"></include>
+<include src="../layouts/header.html"></include>
+<!-- hero -->
+<div class="relative h-[250px] lg:h-[300px] flex items-end pb-[79px] lg:pb-[30px]">
+  <div class="text-h1 z-50 relative container">
+    <h1>Giełda usług</h1>
+  </div>
+  <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover object-center"
+    src="/assets/images/hero/gielda-uslug-hero.png" alt="">
+</div>
+<!-- end hero -->
+<section class="header mb-5">
+  <div class="container">
+    <div class="flex justify-between lg:pt-5">
+      <div class="text-breadcrumbs p-2.5 mb-2.5">
+        <ul class="flex flex-wrap w-full">
+          <li><a href="/">Klaster</a></li>
+          <li><a class="disabledd active" href="">Giełda usług</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="oferta-uslug pb-[36px]">
+    <div class="container">
+        <div class="text-h2 underline-custom">
+            <h2>Oferta usług</h2>
+        </div>
+        <div class="grid-custom grid-custom__gapped-large py-[30px]">
+            <div class="col-span-full lg:col-span-7">
+                <div class="search ml-auto">
+                    <form>
+                       <div class="search search--gielda relative"><input type="search" id="default-search" class="border-none"
+                             placeholder="Wyszukaj usługę" required=""><button type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#302B3F"/>
+                                </svg>
+                                </button></div>
+                    </form>
+                 </div>
+            </div>
+            <div class="col-span-full lg:col-span-5 flex flex-wrap">
+                <div class="sorting-posts text-base leading-[34px] flex sm:mr-8 sm:ml-[15px] items-center"><span class="font-light">Kategoria:</span>
+                    <label id="dropdownDefaultFilters" data-dropdown-toggle="dropdown"
+                            class="pl-2.5 btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Wszystkie
+                            <svg class="ml-2.5" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="#302B3F"></path>
+                        </svg>
+                    </label>
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-auto lg:w-44 dark:bg-gray-700">
+                        <ul aria-labelledby="dropdownDefaultFilters" class="dropdown-content menu menu-normal p-2 shadow-sm bg-white rounded w-52">
+                            <li><a>Wszystkie</a></li>
+                            <li><a>Kategoria 1</a></li>
+                            <li><a>Kategoria 2</a></li>
+                            <li><a>Kategoria 3</a></li>
+                            <li><a>Kategoria 4</a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="sorting-posts text-base leading-[34px] flex items-center"><span class="font-light">Sortuj wg:</span>
+                    <label id="dropdownDefault" data-dropdown-toggle="dropdown-sortowanie"
+                            class="pl-2.5 btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Najnowsze
+                            <svg class="ml-2.5" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="#302B3F"></path>
+                        </svg>
+                    </label>
+                    <div id="dropdown-sortowanie" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-auto lg:w-44 dark:bg-gray-700">
+                        <ul aria-labelledby="dropdownDefault" class="dropdown-content menu menu-normal p-2 shadow-sm bg-white rounded w-52">
+                            <li><a href="">Najnowsze</a></li>
+                            <li><a href="">Najstarsze</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="posts space-y-[30px]">
+            <div class="post">
+                <div class="grid-custom grid-custom__gapped-large border-b-[1px] border-b-grey pb-[15px]" href="">   
+                    <div class="col-span-full lg:col-span-3">
+                        <div class="img">
+                            <img class="object-cover object-center w-full h-full rounded-sm" src="/assets/images/gielda-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-span-full lg:col-span-9">
+                        <div class="text">
+                            <div class="text-single--filters mb-2">
+                                <ul class="flex flex-wrap w-full">
+                                    <li><a class="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                                    <li><a class="transition-[color] hover:text-green" href="">Kiedy dodany</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-h3">
+                                <h2>Lorem ipsum dolor sit</h2>
+                            </div>
+                            <div class="text-base">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut lacus, adipiscing egestas. Sit viverra at odio mattis id nulla tempor nulla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="grid-custom grid-custom__gapped-large border-b-[1px] border-b-grey pb-[15px]" href="">   
+                    <div class="col-span-full lg:col-span-3">
+                        <div class="img">
+                            <img class="object-cover object-center w-full h-full rounded-sm" src="/assets/images/gielda-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-span-full lg:col-span-9">
+                        <div class="text">
+                            <div class="text-single--filters mb-2">
+                                <ul class="flex flex-wrap w-full">
+                                    <li><a class="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                                    <li><a class="transition-[color] hover:text-green" href="">Kiedy dodany</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-h3">
+                                <h2>Lorem ipsum dolor sit</h2>
+                            </div>
+                            <div class="text-base">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut lacus, adipiscing egestas. Sit viverra at odio mattis id nulla tempor nulla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="grid-custom grid-custom__gapped-large border-b-[1px] border-b-grey pb-[15px]" href="">   
+                    <div class="col-span-full lg:col-span-3">
+                        <div class="img">
+                            <img class="object-cover object-center w-full h-full rounded-sm" src="/assets/images/gielda-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-span-full lg:col-span-9">
+                        <div class="text">
+                            <div class="text-single--filters mb-2">
+                                <ul class="flex flex-wrap w-full">
+                                    <li><a class="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                                    <li><a class="transition-[color] hover:text-green" href="">Kiedy dodany</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-h3">
+                                <h2>Lorem ipsum dolor sit</h2>
+                            </div>
+                            <div class="text-base">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut lacus, adipiscing egestas. Sit viverra at odio mattis id nulla tempor nulla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+            </div>
+                
+            <div class="pagination flex justify-center pt-[67px]">
+                <div class="btn-group"><button class="btn btn-primary">&lt;</button><button
+                        class="btn btn-primary">1</button><button
+                        class="btn btn-primary btn-active disabled">2</button><button
+                        class="btn btn-primary">3</button><button class="btn btn-primary">4</button><button
+                        class="btn btn-primary">5</button><button class="btn btn-primary">&gt;</button></div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+<include src="../layouts/close.html"></include>
+<include src="../layouts/footer.html"></include>

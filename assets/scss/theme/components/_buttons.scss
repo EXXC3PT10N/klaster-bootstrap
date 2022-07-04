@@ -9,3 +9,10 @@
 .btn-navbar {
   @apply py-3 px-[30px];
 }
+.btn-contact {
+  padding: 13px 25px;
+  background: #302B3F;
+  border-radius: 5px;
+  @apply tracking-[0.1em] uppercase font-bold hover:ring-blue-dark focus:ring-2 focus:ring-blue-dark transition-shadow hover:ring-2;
+
+}

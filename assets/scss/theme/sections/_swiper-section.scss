@@ -30,3 +30,21 @@
         }
     }
 } 
+
+.firmy-slider__pagination {
+    @apply relative mt-5 lg:mt-10  z-50;
+    .swiper-pagination-bullet {
+        @apply mx-[6px] lg:mx-2.5 #{!important};
+        @apply bg-white transition-[color] my-0 rounded-none;
+        @apply rounded-[999px];
+        @apply relative;
+        @apply w-4 h-4;
+        @apply lg:w-[25px] lg:h-[25px];
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        opacity: 1 !important; 
+        &-active {
+            @apply bg-green;
+           opacity: 1 !important; 
+        }
+    }
+} 

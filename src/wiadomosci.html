@@ -19,14 +19,14 @@
                     </ul>
                 </div>
                 <form>
-                    <div class="search relative"><input type="search" id="default-search" class="outline-none "
+                    <div class="search relative mt-2.5"><input type="search" id="default-search" class="border-none "
                             placeholder="Znajdz wiadomość" required=""><button type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#302B3F"/>
                                 </svg>
                                 </button></div>
                 </form>
             </div>
-            <div class="grid-custom grid-custom__gapped lg:pt-2.5 mt-[50px] lg:mt-0">
+            <div class="lg:grid lg:grid-cols-12 gap-x-[30px] lg:pt-2.5 mt-[50px] lg:mt-0">
                 <div class="col-span-full lg:col-span-8">
                     <div class="flex items-center">
                         <div class="w-full">
@@ -34,59 +34,71 @@
                                 <h2 class="underline-custom inline-block">Najnowsze wiadomości</h2>
                             </div>
                         </div>
-                        <div class="arrows flex space-x-5"><a class="previous group cursor-pointer"><svg class=""
-                                    width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle class="group-hover:stroke-green transition group-hover:opacity-100"
-                                        opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
-                                    </circle>
-                                    <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
-                                        d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                                        fill="#282828"></path>
-                                </svg></a><a class="next group cursor-pointer"><svg class="transform rotate-180"
-                                    width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle class="transition group-hover:stroke-green group-hover:opacity-100"
-                                        opacity=".3" cx="15" cy="15" r="13.5" stroke="#282828" stroke-width="3">
-                                    </circle>
-                                    <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
-                                        d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
-                                        fill="#282828"></path>
-                                </svg></a></div>
+                        <div class="arrows flex justify-center lg:self-center lg:mb-0.5 lg:space-x-5 space-x-2.5">
+                            <a class="wiadomosci__nav__prev previous group cursor-pointer">
+                               <svg class="" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle class="group-hover:stroke-green transition group-hover:opacity-100" opacity=".3" cx="15"
+                                     cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                                  </circle>
+                                  <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                                     d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                                     fill="#282828"></path>
+                               </svg>
+                            </a>
+                            <a class="wiadomosci__nav__next next group cursor-pointer">
+                               <svg class="transform rotate-180" width="30" height="30" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <circle class="transition group-hover:stroke-green group-hover:opacity-100" opacity=".3" cx="15"
+                                     cy="15" r="13.5" stroke="#282828" stroke-width="3">
+                                  </circle>
+                                  <path class="transition group-hover:fill-green group-hover:opacity-100" opacity=".3"
+                                     d="M9.493 14.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L11.614 15l5.657-5.657a1 1 0 0 0-1.414-1.414l-6.364 6.364ZM19.8 14h-9.6v2h9.6v-2Z"
+                                     fill="#282828"></path>
+                               </svg>
+                            </a>
+          
+                         </div>
                     </div>
-                    <div class="grid grid-cols-8 gap-x-[30px] mt-[50px]">
-                        <div class="col-span-full lg:col-span-4">
-                            <a href=""><img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt=""></a>
-                        </div>
-
-                        <div class="col-span-full lg:col-span-4 flex flex-col">
-                            <ul class="filters text-single--filters flex flex-wrap">
-                                <li><a href="">Kategoria</a></li>
-                            </ul>
-                            <div class="text-h3 mt-4 mb-2.5">
-                                <h3>Lorem ipsum dolor sit consectetur</h3>
+                    <div class="swiper wiadomosci-page mt-[50px]">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide grid grid-cols-8 gap-x-[30px]">
+                                <div class="col-span-full lg:col-span-4">
+                                    <a href=""><img class="rounded-sm" src="/assets/images/wiadomosci-konkret-2.png" alt=""></a>
+                                </div>
+        
+                                <div class="col-span-full lg:col-span-4 flex flex-col mt-[15px] lg:mt-0">
+                                    <ul class="filters text-single--filters flex flex-wrap">
+                                        <li><a href="">Kategoria</a></li>
+                                    </ul>
+                                    <div class="text-h3 mt-4 mb-2.5">
+                                        <h3>Lorem ipsum dolor sit consectetur</h3>
+                                    </div>
+                                    <div class="text-base mb-[30px]">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna magna gravida mauris
+                                            arcu potenti purus purus duis vel.</p>
+                                    </div>
+                                    <a href=""
+                                        class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">Dowiedz
+                                        się więcej <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path
+                                                    d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="a">
+                                                    <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
+                                                    </path>
+                                                </clipPath>
+                                            </defs>
+                                        </svg></a>
+                                </div>
                             </div>
-                            <div class="text-base mb-[30px]">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna magna gravida mauris
-                                    arcu potenti purus purus duis vel.</p>
-                            </div>
-                            <a href=""
-                                class="font-bold tracking-[0.1em] uppercase flex items-center py-[5px] group transition-[color] hover:text-green">Dowiedz
-                                się więcej <svg class="transition-[padding] group-hover:pl-1" width="29" height="30"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#a)" stroke="#302B3F" stroke-width="1.785" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M5.95 14.976h16.656M17.847 19.735l4.759-4.76M17.847 10.217l4.759 4.759">
-                                        </path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="a">
-                                            <path fill="#fff" transform="translate(0 .699)" d="M0 0h28.554v28.554H0z">
-                                            </path>
-                                        </clipPath>
-                                    </defs>
-                                </svg></a>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col-span-full lg:col-span-4 shadow-sm mt-[50px] py-2.5 px-5 rounded">
                     <div class="text-h3 mb-[30px]">
@@ -154,7 +166,7 @@
                     <li class="px-5 first:pl-0 last:pr-0"><a href="" class="">Kategoria 4</a></li>
                     <li class="px-5 first:pl-0 last:pr-0"><a href="" class="">Kategoria 5</a></li>
                 </ul>
-                <div class="lg:hidden sorting-posts text-base leading-[34px] flex"><span class="font-light">Filtruj:</span>
+                <div class="lg:hidden sorting-posts text-base leading-[34px] flex items-center"><span class="font-light">Filtruj:</span>
                     <label id="dropdownDefaultFilters" data-dropdown-toggle="dropdown"
                             class="pl-2 btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Wszystkie
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -172,7 +184,7 @@
                         </ul> 
                     </div>
                 </div>
-                <div class="sorting-posts text-base leading-[34px] flex"><span class="font-light">Sortuj wg:</span>
+                <div class="sorting-posts text-base leading-[34px] flex items-center"><span class="font-light">Sortuj wg:</span>
                     <label id="dropdownDefault" data-dropdown-toggle="dropdown-sortowanie"
                             class="pl-2 btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Najnowsze
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"

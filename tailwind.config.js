@@ -24,6 +24,9 @@ module.exports = {
         'sm' : '0px 0px 12px rgba(0, 0, 0, 0.1)',
       },
       colors: {
+        'primary': {
+          DEFAULT: '#23C878', 
+        },
         // Base colors
         transparent: 'transparent',
         'white': '#ffffff',
@@ -42,6 +45,7 @@ module.exports = {
         blue: {
           DEFAULT: "#08AEEA",
           dark: "#302B3F",
+          
         },
         green: {
           DEFAULT: '#23C878',
@@ -113,6 +117,8 @@ module.exports = {
           }
         })
       },
+      require('flowbite/plugin'),
+ 
     ],
   }
   
